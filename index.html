@@ -77,6 +77,33 @@
 		height: 100%;
 	}
 
+	#section2{
+		background: -webkit-gradient(linear, top left, bottom left, from(#A1BF88), to(#6B7690));
+		background: -webkit-linear-gradient(#A1BF88, #6B7690);
+		background: linear-gradient(#A1BF88,#6B7690);
+	}
+
+	#section3{
+		background: -webkit-gradient(linear, top left, bottom left, from(#6B7690), to(#C0899A));
+		background: -webkit-linear-gradient(#6B7690, #C0899A);
+		background: linear-gradient(#6B7690,#C0899A);
+	}
+
+
+
+ 	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background: -webkit-gradient(linear, top left, bottom left, from(#D7CC99), to(#A1BF88));
+		background: -webkit-linear-gradient(#D7CC99, #A1BF88);
+		background: linear-gradient(#D7CC99,#A1BF88);
+	}
+	#slide2{
+		background: -webkit-gradient(linear, top left, bottom left, from(#D7CC99), to(#A1BF88));
+		background: -webkit-linear-gradient(#D7CC99, #A1BF88);
+		background: linear-gradient(#D7CC99,#A1BF88);
+	}
+
 	</style>
 
 	<!--[if IE]>
@@ -98,7 +125,7 @@
 			$('#fullpage').fullpage({
 				verticalCentered: true,
 				anchors: ['firstPage', 'secondPage', '3rdPage'],
-				sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
+				sectionsColor: ['#D7CC99', '#D7CC99', '#A1BF88'],
 				slidesNavigation: true,
 			});
 
@@ -124,7 +151,6 @@
 	<div class="section" id="section1">
 	    <div class="slide" id="slide1" data-anchor="slide1">
 		<div class="intro">
-			<img src="imgs/1.png"  alt="1"/>
 			<h1>歡迎來到盧村</h1>
 			<p>我們是 UW&WE</p>
 		</div>
@@ -146,6 +172,11 @@
 	<div class="section" id="section2">
 		<div class="intro">
 			<h1>Enjoy it</h1>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1>結尾了</h1>
 		</div>
 	</div>
 </div>
