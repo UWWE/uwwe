@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wb="http://open.weibo.com/wb">
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -7,6 +7,7 @@
 
 
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/examples.css" />
 	<style>
 
@@ -104,6 +105,71 @@
 		background: linear-gradient(#D7CC99,#A1BF88);
 	}
 
+	.social {
+	  position: absolute;
+	  width: 100%;
+	  top: 50%;
+	  text-align: center;
+	  transform: translateY(-50%);
+	}
+
+	.social .link {
+	  display: inline-block;
+	  vertical-align: middle;
+	  position: relative;
+	  width: 150px;
+	  height: 150px;
+	  border-radius: 50%;
+	  border: 2px dashed white;
+	  background-clip: content-box;
+	  padding: 10px;
+	  transition: .5s;
+	  color: #D7D0BE;
+	  margin-left: 15px;
+	  margin-right: 15px;
+	  text-shadow:
+	    0 -1px 0 rgba(0, 0, 0, 0.2),
+	    0 1px 0 rgba(255, 255, 255, 0.2);
+	  font-size: 70px;
+	}
+
+	.social .link span {
+	  display: block;
+	  position: absolute;
+	  text-align: center;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+
+	.social .link:hover {
+	  padding: 20px;
+	  color: white;
+	  margin-left: -5px;
+	  transform: translateX(10px) rotate(360deg);
+	}
+
+	.social .link.weibo {
+	  background-color: #E6162D;
+	  color: white;
+	}
+
+	.social .link.renren {
+	  background-color: #227DC5;
+	  color: white;
+	}
+
+	.social .link.facebook {
+	  background-color: #3B5998;
+	  color: white;
+	}
+
+	.social .link.wechat {
+	  background-color: #00D30D;
+	  color: white;
+	}
+
+
 	</style>
 
 	<!--[if IE]>
@@ -120,66 +186,108 @@
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="js/examples.js"></script>
 
+
+<!-- Weibo -->
+	<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<!-- Weibo -->
+
+
 	<script type="text/javascript">
+		// FullpageJs
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				verticalCentered: true,
 				anchors: ['firstPage', 'secondPage', '3rdPage'],
 				sectionsColor: ['#D7CC99', '#D7CC99', '#A1BF88'],
 				slidesNavigation: true,
+				easing: 'easeOutExpo'
 			});
 
 		});
 		$('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
 
-		  $(window).resize(function(){
-		    $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
-		  });
+		$(window).resize(function(){
+		  $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+		});
 	</script>
 
 </head>
 <body>
+	<ul id="menu">
+		<li data-menuanchor="firstPage"><a href="#firstPage">社团介绍</a></li>
+		<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+		<li data-menuanchor="3rdPage"><a href="#3rdPage">加入我们</a></li>
+	</ul>
 
-<div id="fullpage">
+	<div id="fullpage">
 
-	<div class="section " id="section0">
-		<div style="width: 100%; height: 100%">
-			<iframe id="video" src="http://www.youtube.com/embed/vd__zUVdYJI?autoplay=1&amp;showinfo=0&amp;rel=o&amp;controls=0" frameborder="0" height="60%" width="60%"></iframe>
+	<!-- Commented out video for now -->
+	<!-- 
+		<div class="section " id="section0">
+			<div style="width: 100%; height: 100%">
+				<iframe id="video" src="http://www.youtube.com/embed/vd__zUVdYJI?autoplay=1&amp;showinfo=0&amp;rel=o&amp;controls=0" frameborder="0" height="60%" width="60%"></iframe>
+			</div>
+
+		</div>-->
+
+		<div class="section" id="section1">
+		    <div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>歡迎來到盧村</h1>
+				<p>我們是 UW&WE</p>
+			</div>
+			</div>
+
+		    <div class="slide" id="slide2" data-anchor="slide2">
+				<h1>Slide 2</h1>
+			</div>
+
+			<div class="slide" id="slide3" data-anchor="slide3">
+				<h1>Slide 3</h1>
+			</div>	<div class="slide" id="slide3" data-anchor="slide3">
+				<h1>Slide 4</h1>
+			</div>
+			<div class="slide" id="slide3" data-anchor="slide3">
+				<h1>Slide 5</h1>
+			</div>
 		</div>
+		<div class="section" id="section2">
+			<div class="intro">
+				<h1>Enjoy it</h1>
+			</div>
+		</div>
+		<div class="section" id="section3">
+			<div class="intro">
+				<div class="social">
+					<a href="https://www.facebook.com/pages/UWWE/1449394115303380" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
+					<a href="#" class="link wechat" target="_parent"><span class="fa fa-wechat"></span></a>
+					<a href="https://http://page.renren.com/601874886?id=601874886&ref=opensearch_normal" class="link renren" target="_parent"><span class="fa fa-renren"></span></a>
+					<a href="http://www.weibo.com/uwwe" class="link weibo" target="_parent"><span class="fa fa-weibo "></span></a>
+				</div>
 
+
+
+<!-- 				<p>
+					微信平台：uwaterloowe
+				</p>
+				<p>
+					人人主页：滑大we
+					<iframe scrolling="no" frameborder="0" allowtransparency="true" src="http://widget.renren.com/plugin/followbutton?page_id=601874886&color=0&model=1" style="width:80%;height:40px;" ></iframe>
+				</p>
+				<p>
+					facebook主页：UW&WE
+					<div class="fb-like" data-href="https://www.facebook.com/pages/UWWE/1449394115303380" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+				</p>
+				<p>
+					<wb:follow-button uid="3954073273" type="gray_4" width="80%" height="40px" ></wb:follow-button>
+					微博主页：滑大we
+				</p>
+				<p>
+					邮箱：uwaterloowe@gmail.com
+				</p> -->
+			</div>
+		</div>
 	</div>
-	<div class="section" id="section1">
-	    <div class="slide" id="slide1" data-anchor="slide1">
-		<div class="intro">
-			<h1>歡迎來到盧村</h1>
-			<p>我們是 UW&WE</p>
-		</div>
-		</div>
-
-	    <div class="slide" id="slide2" data-anchor="slide2">
-			<h1>Slide 2</h1>
-		</div>
-
-		<div class="slide" id="slide3" data-anchor="slide3">
-			<h1>Slide 3</h1>
-		</div>	<div class="slide" id="slide3" data-anchor="slide3">
-			<h1>Slide 4</h1>
-		</div>
-		<div class="slide" id="slide3" data-anchor="slide3">
-			<h1>Slide 5</h1>
-		</div>
-	</div>
-	<div class="section" id="section2">
-		<div class="intro">
-			<h1>Enjoy it</h1>
-		</div>
-	</div>
-	<div class="section" id="section3">
-		<div class="intro">
-			<h1>結尾了</h1>
-		</div>
-	</div>
-</div>
 
 
 </body>
