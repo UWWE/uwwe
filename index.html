@@ -200,15 +200,16 @@
 				anchors: ['firstPage', 'secondPage', '3rdPage'],
 				sectionsColor: ['#D7CC99', '#D7CC99', '#A1BF88'],
 				slidesNavigation: true,
-				easing: 'easeOutExpo'
+				easing: 'easeOutExpo',
+				css3: true
 			});
 
 		});
-		$('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+		// $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
 
-		$(window).resize(function(){
-		  $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
-		});
+		// $(window).resize(function(){
+		//   $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+		// });
 	</script>
 
 </head>
