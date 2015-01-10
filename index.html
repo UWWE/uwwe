@@ -173,8 +173,7 @@
 			 var console = { log: function() {} };
 		</script>
 	<![endif]-->
-
-	<script src="jquery/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="jquery-ui/jquery-ui.min.js"></script>
 
 	<script type="text/javascript" src="fullPage/vendors/jquery.slimscroll.min.js"></script>
@@ -189,7 +188,12 @@
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
+	<script src="backstretch/jquery.backstretch.min.js"></script>
+
 	<script type="text/javascript">
+
+		
+
 		// FullpageJs
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
@@ -241,8 +245,10 @@
 		    var jssor_slider1 = new $JssorSlider$('slider1_container', options);
 		    var jssor_slider2 = new $JssorSlider$('slider2_container', options);
 		    var jssor_slider3 = new $JssorSlider$('slider3_container', options);
+				
 
 		    $('.Collage').collagePlus();
+		    $(".slide1").backstretch("http://placehold.it/1000x1000");
 		});
 
 
@@ -288,14 +294,6 @@
 				<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 1920px; height: 1080px; margin: auto; opacity: 0.7">
 				    <!-- Slides Container -->
 				    <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1920px; height: 1080px;">
-				        <div><img u="image" src="imgs/food/1.jpg" /></div>
-				        <div><img u="image" src="imgs/food/2.jpg" /></div>
-				        <div><img u="image" src="imgs/food/3.jpg" /></div>
-				        <div><img u="image" src="imgs/food/4.jpg" /></div>
-				        <div><img u="image" src="imgs/food/5.jpg" /></div>
-				        <div><img u="image" src="imgs/food/6.jpg" /></div>
-				        <div><img u="image" src="imgs/food/7.jpg" /></div>
-				        <div><img u="image" src="imgs/food/8.jpg" /></div>
 				    </div>
 				</div>
 			</div>
@@ -337,16 +335,16 @@
 		</div>
 		<div class="section" id="section3">
 			<div id="myImageflow" class="imageflow">
-			    <img src="imgs/team/kiki.jpg" width="3182" height="6368" alt=""/>
-			    <img src="imgs/team/ivy.jpg" width="400" height="300" alt=""/>
-			    <img src="imgs/team/sophie.jpg" width="400" height="300" alt=""/>
-			    <img src="imgs/team/nicole.jpg" width="400" height="300" alt=""/>
-			    <img src="imgs/team/sue.jpg" width="400" height="300" alt=""/>
-			    <img src="imgs/team/carl.jpg" width="400" height="300" alt=""/>
-			    <img src="imgs/team/yan.jpg" width="400" height="300" alt=""/>
-			    <img src="imgs/team/marc.jpg" width="400" height="300" alt=""/>
-			    <img src="imgs/team/frank.jpg" width="400" height="300" alt=""/>
-			    <img src="imgs/team/lcd.jpg" width="400" height="300" alt=""/>
+			    <img src="imgs/team/kiki2.jpg" width="800" height="651" alt=""/>
+			    <img src="imgs/team/ivy.jpg" width="800" height="534" alt=""/>
+			    <img src="imgs/team/sophie.jpg" width="800" height="534" alt=""/>
+			    <img src="imgs/team/nicole.jpg" width="800" height="534" alt=""/>
+			    <img src="imgs/team/sue.jpg" width="650" height="974" alt=""/>
+			    <img src="imgs/team/carl.jpg" width="650" height="782" alt=""/>
+			    <img src="imgs/team/yan.jpg" width="800" height="468" alt=""/>
+			    <img src="imgs/team/marc.jpg" width="800" height="534" alt=""/>
+			    <img src="imgs/team/frank.jpg" width="800" height="534" alt=""/>
+			    <img src="imgs/team/lcd.jpg" width="650" height="974" alt=""/>
 			</div>
 		</div>
 				<div class="section" id="section4">
