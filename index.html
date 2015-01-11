@@ -174,7 +174,7 @@
 		</script>
 	<![endif]-->
 	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="jquery-ui/jquery-ui.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
 
 	<script type="text/javascript" src="fullPage/vendors/jquery.slimscroll.min.js"></script>
 
@@ -201,18 +201,27 @@
 				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'lastPage'],
 				menu: '#menu',
 				easing: 'easeOutExpo',
-				css3: true
 			});
 			var instanceOne = new ImageFlow();
 		    instanceOne.init({
 		    	ImageFlowID: 'myImageflow',
-		    	reflections: false,
-		    	reflectionP: 0.0,
+		    	circular: true,
+			    reflections: false,
+			    reflectionP: 0.4,
+			    slider: false,
+			    captions: false,
+			    opacity: true,
+			    xStep: 250,
+			    imageFocusM: 1.5,
 		    	sliderCursor: 'e-resize',
 		    	imageCursor: 'pointer',
 		    	slideshow: true,
 		    	slideshowAutoplay: true,
-		    	slideshowSpeed: 3000
+		    	slideshowSpeed: 3000,
+		    	onClick: function(){
+		    		$('#' + this.name).modal('show');
+		    		console.log(this.name);
+		    	}
 		    });
 
 
@@ -276,17 +285,6 @@
 	</ul>
 
 	<div id="fullpage">
-
-	<!-- Commented out video for now -->
-	<!-- 
-		<div class="section " id="section0">
-			<div style="width: 100%; height: 100%">
-				<iframe id="video" src="http://www.youtube.com/embed/vd__zUVdYJI?autoplay=1&amp;showinfo=0&amp;rel=o&amp;controls=0" frameborder="0" height="60%" width="60%"></iframe>
-			</div>
-
-		</div>-->
-
-
 		<div class="section" id="section1">
 			<img src="imgs/logo.png">
 			<h1>歡迎來到盧村</h1>
@@ -337,22 +335,214 @@
 			</div>
 		</div>
 		<div class="section" id="section3">
+
+			<!-- Modal for kiki-->
+			<div class="modal fade" id="kiki" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+						</div>
+						<div class="modal-body">
+						...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal for ivy-->
+			<div class="modal fade" id="ivy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+						</div>
+						<div class="modal-body">
+						...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal for sophie-->
+			<div class="modal fade" id="sophie" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+						</div>
+						<div class="modal-body">
+						...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal for nicole-->
+			<div class="modal fade" id="nicole" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+						</div>
+						<div class="modal-body">
+						...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal for sue-->
+			<div class="modal fade" id="sue" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+						</div>
+						<div class="modal-body">
+						...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal for carl-->
+			<div class="modal fade" id="carl" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+						</div>
+						<div class="modal-body">
+						...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal for yan-->
+			<div class="modal fade" id="yan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+						</div>
+						<div class="modal-body">
+						...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal for marc-->
+			<div class="modal fade" id="marc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+						</div>
+						<div class="modal-body">
+						...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal for frank-->
+			<div class="modal fade" id="frank" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+						</div>
+						<div class="modal-body">
+						...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal for lcd-->
+			<div class="modal fade" id="lcd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+						</div>
+						<div class="modal-body">
+						...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div id="myImageflow" class="imageflow">
-			    <img src="imgs/team/kiki2.jpg" width="800" height="651" alt="Kiki Yang"/>
-			    <img src="imgs/team/ivy.jpg" width="800" height="534" alt="Ivy"/>
-			    <img src="imgs/team/sophie.jpg" width="800" height="534" alt="Sophie Shi"/>
-			    <img src="imgs/team/nicole.jpg" width="800" height="534" alt="Nicole"/>
-			    <img src="imgs/team/sue.jpg" width="650" height="974" alt="Susan"/>
-			    <img src="imgs/team/carl.jpg" width="650" height="782" alt="Carl"/>
-			    <img src="imgs/team/yan.jpg" width="800" height="468" alt="Yan"/>
-			    <img src="imgs/team/marc.jpg" width="800" height="534" alt="Marc"/>
-			    <img src="imgs/team/frank.jpg" width="800" height="534" alt="Frank"/>
-			    <img src="imgs/team/lcd.jpg" width="650" height="974" alt="Richard"/>
+			    <img src="imgs/team/kiki2.jpg" width="800" height="651" alt="Kiki Yang" name="kiki"/>
+			    <img src="imgs/team/ivy.jpg" width="800" height="534" alt="Ivy" name="ivy"/>
+			    <img src="imgs/team/sophie.jpg" width="800" height="534" alt="Sophie Shi" name="sophie"/>
+			    <img src="imgs/team/nicole.jpg" width="800" height="534" alt="Nicole" name="nicole"/>
+			    <img src="imgs/team/sue.jpg" width="650" height="974" alt="Susan" name="sue" />
+			    <img src="imgs/team/carl.jpg" width="650" height="782" alt="Carl" name="carl" />
+			    <img src="imgs/team/yan.jpg" width="800" height="468" alt="Yan" name="yan" />
+			    <img src="imgs/team/marc.jpg" width="800" height="534" alt="Marc" name="marc"/>
+			    <img src="imgs/team/frank.jpg" width="800" height="534" alt="Frank" name="frank" />
+			    <img src="imgs/team/lcd.jpg" width="650" height="974" alt="Richard" name="lcd" />
 			</div>
 		</div>
-				<div class="section" id="section4">
+			<div class="section" id="section4">
 				<div class="intro">
-				<h1>Enjoy it</h1>
+					<h1>Enjoy it</h1>
+				</div>
 			</div>
 		</div>
 		<div class="section" id="section5">
