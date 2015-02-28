@@ -23,6 +23,14 @@
 		color: #464646;
 		margin:0;
 	}
+
+	.info img {
+		z-index: 10;
+		position: absolute;
+		left: 100px;
+		bottom: 150px;
+		width: 500px;
+	}
 	.intro p{
 		color: #fff;
 	}
@@ -313,9 +321,12 @@
 		
 		<div class="section" id="section2">
 		    <div class="slide" id="slide1" data-anchor="slide1">
-				<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 1920px; height: 1080px; margin: auto; opacity: 0.7">
+				<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 1920px; height: 1080px; margin: auto;">
 				    <!-- Slides Container -->
-				    <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1920px; height: 1080px;">
+					<div class="text-box info">
+						<img u="image" src="imgs/food/food_intro.png"/>
+					</div>
+				    <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1920px; height: 1080px; z-index: -10;">
 				    	<div><img u="image" src="imgs/food/1.jpg" /></div>
 				        <div><img u="image" src="imgs/food/2.jpg" /></div>
 				        <div><img u="image" src="imgs/food/3.jpg" /></div>
@@ -329,9 +340,12 @@
 			</div>
 
 		    <div class="slide" id="slide2" data-anchor="slide2">
-				<div id="slider2_container" style="position: relative; top: 0px; left: 0px; width: 1920px; height: 1080px; margin: auto; opacity: 0.7">
+				<div id="slider2_container" style="position: relative; top: 0px; left: 0px; width: 1920px; height: 1080px; margin: auto;">
 				    <!-- Slides Container -->
-				    <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1920px; height: 1080px;">
+					<div class="text-box info">
+						<img u="image" src="imgs/social/social_intro.png"/>
+					</div>
+				    <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1920px; height: 1080px; z-index: -10;">
 				        <div><img u="image" src="imgs/social/1.jpg" /></div>
 				        <div><img u="image" src="imgs/social/2.jpg" /></div>
 				        <div><img u="image" src="imgs/social/3.jpg" /></div>
@@ -344,9 +358,12 @@
 			</div>
 
 			<div class="slide" id="slide3" data-anchor="slide3">
-				<div id="slider3_container" style="position: relative; top: 0px; left: 0px; width: 1920px; height: 1080px; margin: auto; opacity: 0.7">
+				<div id="slider3_container" style="position: relative; top: 0px; left: 0px; width: 1920px; height: 1080px; margin: auto;">
 				    <!-- Slides Container -->
-				    <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1920px; height: 1080px;">
+					<div class="text-box info">
+						<img u="image" src="imgs/firstYear/firstYear_intro.png"/>
+					</div>
+				    <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1920px; height: 1080px; z-index: -10;">
 				        <div><img u="image" src="imgs/firstYear/1.jpg" /></div>
 				        <div><img u="image" src="imgs/firstYear/2.jpg" /></div>
 				        <div><img u="image" src="imgs/firstYear/3.jpg" /></div>
