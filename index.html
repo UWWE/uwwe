@@ -33,6 +33,7 @@
 		bottom: 20%;
 		width: 500px;
 	}
+
 	.intro p{
 		color: #fff;
 	}
@@ -243,7 +244,7 @@
 			var instanceOne = new ImageFlow();
 		    instanceOne.init({
 		    	ImageFlowID: 'myImageflow',
-		    	circular: true,
+		    	circular: false,
 			    reflections: false,
 			    reflectionP: 0.4,
 			    slider: false,
@@ -258,8 +259,13 @@
 		    	slideshowAutoplay: false,
 		    	slideshowSpeed: 3000,
 		    	onClick: function(){
-		    		$('#' + this.name).modal('show');
-		    		console.log(this.name);
+		    		if(this.name === 'placeholder'){
+		    			window.open('https://docs.google.com/forms/d/1aBMlWXiSUvI1mYbYBgCByaPd2sT8YYBwS82dtF1omJQ/viewform?usp=send_form', '_blank');
+		    		}
+		    		else{
+			    		$('#' + this.name).modal('show');
+			    		console.log(this.name);
+		    		}
 		    	}
 		    });
 
@@ -387,6 +393,11 @@
 				    </div>
 				</div>
 			</div>	
+			<div class="slide" id="slide4" data-anchor="slide4">
+				<img src="imgs/qrcode.jpg">
+				<h1>關注我們</h1>
+			</div>
+
 		</div>
 		<div class="section" id="section3">
 
@@ -431,7 +442,7 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="myModalLabel">Modal for ivy</h4>
+							<h4 class="modal-title" id="myModalLabel">Personal Profile</h4>
 						</div>
 						<div class="modal-body">
 							<div class="container-fluid">
@@ -466,7 +477,7 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="myModalLabel">Modal for sophie shi</h4>
+							<h4 class="modal-title" id="myModalLabel">Personal Profile</h4>
 						</div>
 						<div class="modal-body">
 							<div class="container-fluid">
@@ -501,7 +512,7 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="myModalLabel">Modal for nicole</h4>
+							<h4 class="modal-title" id="myModalLabel">Personal Profile</h4>
 						</div>
 						<div class="modal-body">
 							<div class="container-fluid">
@@ -536,7 +547,7 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="myModalLabel">Modal for sue</h4>
+							<h4 class="modal-title" id="myModalLabel">Personal Profile</h4>
 						</div>
 						<div class="modal-body">
 							<div class="container-fluid">
@@ -571,7 +582,7 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="myModalLabel">Modal for carl</h4>
+							<h4 class="modal-title" id="myModalLabel">Personal Profile</h4>
 						</div>
 						<div class="modal-body">
 							<div class="container-fluid">
@@ -606,7 +617,7 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="myModalLabel">Modal for yan</h4>
+							<h4 class="modal-title" id="myModalLabel">Personal Profile</h4>
 						</div>
 						<div class="modal-body">
 							<div class="container-fluid">
@@ -641,7 +652,7 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="myModalLabel">Modal for marc</h4>
+							<h4 class="modal-title" id="myModalLabel">Personal Profile</h4>
 						</div>
 						<div class="modal-body">
 							<div class="container-fluid">
@@ -676,7 +687,7 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="myModalLabel">Modal for frank</h4>
+							<h4 class="modal-title" id="myModalLabel">Personal Profile</h4>
 						</div>
 						<div class="modal-body">
 							<div class="container-fluid">
@@ -711,7 +722,7 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="myModalLabel">Modal for lcd</h4>
+							<h4 class="modal-title" id="myModalLabel">Personal Profile</h4>
 						</div>
 						<div class="modal-body">
 							<div class="container-fluid">
@@ -741,16 +752,17 @@
 			</div>
 
 			<div id="myImageflow" class="imageflow">
+			    <img src="imgs/team/carl.jpg" width="650" height="782" alt="Carl" name="carl" />
+			    <img src="imgs/team/lcd.jpg" width="650" height="974" alt="Richard" name="lcd" />
+			    <img src="imgs/team/marc.jpg" width="800" height="534" alt="Marc" name="marc"/>
+			    <img src="imgs/team/sophie.jpg" width="800" height="534" alt="Sophie Shi" name="sophie"/>
+			    <img src="imgs/team/sue.jpg" width="650" height="974" alt="Susan" name="sue" />
+			    <img src="imgs/team/frank.jpg" width="800" height="534" alt="Frank" name="frank"/>
 			    <img src="imgs/team/kiki2.jpg" width="800" height="675" alt="Kiki Yang" name="kiki"/>
 			    <img src="imgs/team/ivy.jpg" width="800" height="534" alt="Ivy" name="ivy"/>
-			    <img src="imgs/team/sophie.jpg" width="800" height="534" alt="Sophie Shi" name="sophie"/>
 			    <img src="imgs/team/nicole.jpg" width="800" height="534" alt="Nicole" name="nicole"/>
-			    <img src="imgs/team/sue.jpg" width="650" height="974" alt="Susan" name="sue" />
-			    <img src="imgs/team/carl.jpg" width="650" height="782" alt="Carl" name="carl" />
 			    <img src="imgs/team/yan.jpg" width="800" height="468" alt="Yan" name="yan" />
-			    <img src="imgs/team/marc.jpg" width="800" height="534" alt="Marc" name="marc"/>
-			    <img src="imgs/team/frank.jpg" width="800" height="534" alt="Frank" name="frank" />
-			    <img src="imgs/team/lcd.jpg" width="650" height="974" alt="Richard" name="lcd" />
+			    <img src="imgs/team/placeholder-user-photo.png" width="600" height="600" alt="placeholder" name="placeholder">
 			</div>
 		</div>
 		<div class="section" id="section4">
@@ -763,12 +775,12 @@
 		<div class="section" id="section5">
 			<div class="intro">
 				<div class="social">
-					<a href="https://www.facebook.com/pages/UWWE/1449394115303380" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
-					<a href="#" class="link wechat" target="_parent"><span class="fa fa-wechat"></span></a>
-					<a href="http://page.renren.com/601874886?id=601874886&ref=opensearch_normal" class="link renren" target="_parent"><span class="fa fa-renren"></span></a>
-					<a href="http://www.weibo.com/uwwe" class="link weibo" target="_parent"><span class="fa fa-weibo "></span></a>
-					<a href="http://instagram.com/uw.we?ref=badge" class="link instagram" target="_parent"><span class="fa fa-instagram"></span></a>
-					<a type="button" href="mailto:uwaterloowe@gmail.com" class="link email" target="_parent" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"><span class="fa fa-envelope" data></span></a>
+					<a href="https://www.facebook.com/pages/UWWE/1449394115303380" class="link facebook" target="_blank"><span class="fa fa-facebook-square"></span></a>
+					<a href="http://mp.weixin.qq.com/mp/getmasssendmsg?__biz=MzA5MjY4NjkzMQ==&uin=MTYxNjM0MDEyMQ%3D%3D&key=8ea74966bf01cfb60bf8d5f63770a4fb318e41e3026b6fd439f11d3d69560c91040eb7555ae9bd72f81d330eef5da624&devicetype=iMac+MacBookPro10%2C1+OSX+OSX+10.9.5+build(13F34)&version=11000006&lang=en&pass_ticket=f2%2Fv7PbuXFBEPS2hjXd1%2BigrqqgZEn4ZDqeIsMkY33%2BJOnEVeUJj7l1gt2oX4yct#wechat_webview_type=1" class="link wechat" target="_blank"><span class="fa fa-wechat"></span></a>
+					<a href="http://page.renren.com/601874886?id=601874886&ref=opensearch_normal" class="link renren" target="_blank"><span class="fa fa-renren"></span></a>
+					<a href="http://www.weibo.com/uwwe" class="link weibo" target="_blank"><span class="fa fa-weibo "></span></a>
+					<a href="http://instagram.com/uw.we?ref=badge" class="link instagram" target="_blank"><span class="fa fa-instagram"></span></a>
+					<a type="button" href="mailto:uwaterloowe@gmail.com" class="link email" target="_blank" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"><span class="fa fa-envelope" data></span></a>
 				</div>
 			</div>
 		</div>
