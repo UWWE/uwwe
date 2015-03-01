@@ -17,9 +17,11 @@
 
 	/* Style for our header texts
 	* --------------------------------------- */
+	body{
+		font-family: Georgia, "Times New Roman", "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;
+	}
 	h1{
 		font-size: 5em;
-		font-family: arial,helvetica;
 		color: #464646;
 		margin:0;
 	}
@@ -27,8 +29,8 @@
 	.info img {
 		z-index: 10;
 		position: absolute;
-		left: 100px;
-		bottom: 150px;
+		left: 7%;
+		bottom: 20%;
 		width: 500px;
 	}
 	.intro p{
@@ -68,6 +70,10 @@
 
 	#section2 h1{
 		color: #333;
+	}
+
+	#section3 {
+		background-image: url(imgs/team/bg2.jpg);
 	}
 
 	#section4 {
@@ -242,14 +248,14 @@
 			    reflectionP: 0.4,
 			    slider: false,
 			    captions: false,
-			    opacity: true,
+			    opacity: false,
 			    xStep: 250,
-			    imageFocusM: 1.5,
-			    startID: 3,
+			    imageFocusM: 1.0,
+			    startID: 1,
 		    	sliderCursor: 'e-resize',
 		    	imageCursor: 'pointer',
-		    	slideshow: true,
-		    	slideshowAutoplay: true,
+		    	slideshow: false,
+		    	slideshowAutoplay: false,
 		    	slideshowSpeed: 3000,
 		    	onClick: function(){
 		    		$('#' + this.name).modal('show');
@@ -266,7 +272,7 @@
             	$FillMode: 2,
                 $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
                 $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
-                $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $AutoPlayInterval: 2000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
                 $PauseOnHover: 0,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
                 $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
                 $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
@@ -400,13 +406,13 @@
 									</div>
 									<div class="col-md-5">
 										<div class="row">
-											<p>Name: Kiki Yang</p>
+											<p>名字: Kiki</p>
 										</div>
 										<div class="row">
-											<p>Program: ActSci</p>
+											<p>本科: 精算</p>
 										</div>
 										<div class="row">
-											<p>Intro: Kiki想成为大家的好朋友</p>
+											<p>自我介紹:  I"m whatever people need me to be</p>
 										</div>
 									</div>
 								</div>
@@ -433,7 +439,17 @@
 									<div class="col-md-6">
 										<img u="image" src="imgs/team/profile/ivy.jpg" style="width: 100%" />
 									</div>
-									<div class="col-md-6">.col-md-6</div>
+									<div class="col-md-6">
+										<div class="row">
+											<p>名字: Ivey</p>
+										</div>
+										<div class="row">
+											<p>本科: 數學</p>
+										</div>
+										<div class="row">
+											<p>自我介紹: 大一数学新生林益智，打牌吃饭请算我一个：）</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -458,7 +474,17 @@
 									<div class="col-md-6">
 										<img u="image" src="imgs/team/profile/sophie_shi.jpg" style="width: 100%" />
 									</div>
-									<div class="col-md-6">.col-md-6</div>
+									<div class="col-md-6">
+										<div class="row">
+											<p>名字: Sophie Shi</p>
+										</div>
+										<div class="row">
+											<p>本科: 計算機</p>
+										</div>
+										<div class="row">
+											<p>自我介紹: 选错专业的文艺少女，一直在减肥的吃货。</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -483,7 +509,17 @@
 									<div class="col-md-6">
 										<img u="image" src="imgs/team/profile/nicole.jpg" style="width: 100%" />
 									</div>
-									<div class="col-md-6">.col-md-6</div>
+									<div class="col-md-6">
+										<div class="row">
+											<p>名字: Nicole</p>
+										</div>
+										<div class="row">
+											<p>本科: Civil工程</p>
+										</div>
+										<div class="row">
+											<p>自我介紹: 抽象派 甜点爱 文艺心 逗逼型</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -508,7 +544,17 @@
 									<div class="col-md-6">
 										<img u="image" src="imgs/team/profile/sue.jpg" style="width: 100%" />
 									</div>
-									<div class="col-md-6">.col-md-6</div>
+									<div class="col-md-6">
+										<div class="row">
+											<p>名字: Sue</p>
+										</div>
+										<div class="row">
+											<p>本科: CFM</p>
+										</div>
+										<div class="row">
+											<p>自我介紹: 摄影是病，得治。祖传PS包治百病。(T^T摄影除外)</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -533,7 +579,17 @@
 									<div class="col-md-6">
 										<img u="image" src="imgs/team/profile/carl.jpg" style="width: 100%" />
 									</div>
-									<div class="col-md-6">.col-md-6</div>
+									<div class="col-md-6">
+										<div class="row">
+											<p>名字: Carl</p>
+										</div>
+										<div class="row">
+											<p>本科: 經濟</p>
+										</div>
+										<div class="row">
+											<p>自我介紹: </p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -558,7 +614,17 @@
 									<div class="col-md-6">
 										<img u="image" src="imgs/team/profile/chandler.jpg" style="width: 100%" />
 									</div>
-									<div class="col-md-6">.col-md-6</div>
+									<div class="col-md-6">
+										<div class="row">
+											<p>名字: 成成</p>
+										</div>
+										<div class="row">
+											<p>本科: 機械工程</p>
+										</div>
+										<div class="row">
+											<p>自我介紹: 我就是我 做最不一样的水（cheng）果（zi）</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -583,7 +649,17 @@
 									<div class="col-md-6">
 										<img u="image" src="imgs/team/profile/marc.jpg" style="width: 100%" />
 									</div>
-									<div class="col-md-6">.col-md-6</div>
+									<div class="col-md-6">
+										<div class="row">
+											<p>名字: Marc</p>
+										</div>
+										<div class="row">
+											<p>本科: 電腦工程</p>
+										</div>
+										<div class="row">
+											<p>自我介紹: 英雄莫问出处, 学渣莫问成绩. 拍视频弃成绩就是我</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -608,7 +684,17 @@
 									<div class="col-md-6">
 										<img u="image" src="imgs/team/profile/frank.jpg" style="width: 100%" />
 									</div>
-									<div class="col-md-6">.col-md-6</div>
+									<div class="col-md-6">
+										<div class="row">
+											<p>名字: Frank</p>
+										</div>
+										<div class="row">
+											<p>本科: 計算機</p>
+										</div>
+										<div class="row">
+											<p>自我介紹: 安美男 游戏控 飞机迷 做海报就用Frank Style !</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -633,7 +719,17 @@
 									<div class="col-md-6">
 										<img u="image" src="imgs/team/profile/lcd.jpg" style="width: 100%" />
 									</div>
-									<div class="col-md-6">.col-md-6</div>
+									<div class="col-md-6">
+										<div class="row">
+											<p>名字: LCD</p>
+										</div>
+										<div class="row">
+											<p>本科: 計算機</p>
+										</div>
+										<div class="row">
+											<p>自我介紹: 叫我LCD,  2B CS, 平时喜欢摄影(pai zhao)，文艺(zhuang bi)。</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
