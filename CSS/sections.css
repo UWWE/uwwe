@@ -1,0 +1,27 @@
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align: center;
+	}
+
+	#section1 {
+		background-image: url(../imgs/landing_bg.jpg);
+		background-size: cover;
+		background-position: center center;
+	}
+
+	#section3 {
+		background-image: url(../imgs/team/bg1.jpg);
+		background-size: cover;
+		background-position: center center;
+	}
+
+	#section4 {
+		background-image: url(../imgs/intro/logo_background_new.jpg);
+		background-size: cover;
+		background-position: center center;
+	}
+
+	#section5 {
+		background-color: white;
+	}
