@@ -459,17 +459,4 @@ jQuery(function($){
 	$('.navbar-nav').on('click', 'li a', function() {
 	  $('.navbar-collapse').collapse('hide');
 	});
-
-
-	/* ----------------------------------------------------------- */
-	/*  6. Project Counter
-	/* ----------------------------------------------------------- */
-
-	$('#fullpage').fullpage({
-		verticalCentered: true,
-		anchors: ['Home', 'activities', 'team', 'about', 'contact'],
-		menu: '#top-menu',
-		easing: 'easeOutExpo',
-		resize: true,
-	});
 });
