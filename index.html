@@ -85,9 +85,10 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				verticalCentered: true,
-				anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', 'lastPage'],
+				anchors: ['Home', 'Activities_section_1', 'Activities_section_2', 'Activities_section_3', 'Team', 'About_Us', 'Contact_Us'],
 				menu: '#menu',
 				easing: 'easeOutExpo',
+				resize: true,
 			});
 			var instanceOne = new ImageFlow();
 		    instanceOne.init({
@@ -118,74 +119,38 @@
 		    	}
 		    });
 
-            var nestedSliders = [];
-
             var _SlideshowTransitions = [
             //Fade
             { $Duration: 1200, $Opacity: 2 }
             ];
 
-            $.each(["sliderh1_container", "sliderh2_container", "sliderh3_container"], function (index, containerId) {
-                var nestedSliderOptions = {
-	                $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
-	                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-	             	$AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
-	                $AutoPlayInterval: 2000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
-	                $PauseOnHover: 0,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
-	                $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
-	                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
-	                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
-	                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
-	                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
-	                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
-	                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
-	                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
-	                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
-	                $DragOrientation: 0,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
-	                $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
-	                    $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
-	                    $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
-	                    $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
-	                    $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
-	                },
-                };
-
-                nestedSliders.push(new $JssorSlider$(containerId, nestedSliderOptions));
-            });
-
             var options = {
-                $AutoPlay: false,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-                $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+                $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+             	$AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
                 $AutoPlayInterval: 2000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
-                $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
-
-                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
-                $SlideDuration: 300,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
-                $MinDragOffsetToSlide: 80,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                $PauseOnHover: 0,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+                $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
                 //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
-                //$SlideHeight: 150,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
-                $SlideSpacing: 3, 					                //[Optional] Space between each slide in pixels, default value is 0
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
                 $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
                 $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
-                $UISearchMode: 0,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
                 $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
-                $DragOrientation: 2,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0),
+                $DragOrientation: 0,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+                    $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+                    $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+                    $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                    $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+                },
             };
 
             var jssor_slider1 = new $JssorSlider$("slider1_container", options);
-
-            function OnMainSliderPark(currentIndex, fromIndex) {
-                $.each(nestedSliders, function (index, nestedSlider) {
-                    nestedSlider.$Pause();
-                });
-
-                setTimeout(function () {
-                    nestedSliders[currentIndex].$Play();
-                }, 2000);
-            }
-
-            jssor_slider1.$On($JssorSlider$.$EVT_PARK, OnMainSliderPark);
-            OnMainSliderPark(0, 0);
+            var jssor_slider2 = new $JssorSlider$("slider2_container", options);
+            var jssor_slider3 = new $JssorSlider$("slider3_container", options);
 
             //responsive code begin
             //you can remove responsive code if you don't want the slider scales while window resizes
@@ -200,9 +165,14 @@
 
                     if (originalWidth / windowWidth > originalHeight / windowHeight) {
                         jssor_slider1.$ScaleHeight(windowHeight);
+                        jssor_slider2.$ScaleHeight(windowHeight);
+                        jssor_slider3.$ScaleHeight(windowHeight);
+
                     }
                     else {
                         jssor_slider1.$ScaleWidth(windowWidth);
+                        jssor_slider2.$ScaleWidth(windowWidth);
+                        jssor_slider3.$ScaleWidth(windowWidth);
                     }
                 }
                 else
@@ -221,11 +191,11 @@
 </head>
 <body>
 	<ul id="menu">
-		<li data-menuanchor="1stPage"><a href="#1stPage">主頁</a></li>
-		<li data-menuanchor="2ndPage"><a href="#2ndPage">活動</a></li>
-		<li data-menuanchor="3rdPage"><a href="#3rdPage">團隊</a></li>
-		<li data-menuanchor="4thPage"><a href="#4thPage">介紹</a></li>
-		<li data-menuanchor="5thPage"><a href="#5thPage">社交</a></li>
+		<li data-menuanchor="Home"><a href="#Home">主頁</a></li>
+		<li data-menuanchor="Activities_section_1"><a href="#Activities_section_1">活動</a></li>
+		<li data-menuanchor="Team"><a href="#Team">團隊</a></li>
+		<li data-menuanchor="About_Us"><a href="#About_Us">介紹</a></li>
+		<li data-menuanchor="Contact_Us"><a href="#Contact_Us">社交</a></li>
 	</ul>
 
 	<div id="fullpage">
@@ -233,7 +203,7 @@
 
 		</div>
 		
-		<div class="section" id="section2">
+		<div class="section active" id="section2">
 		    <div style="position: relative; width: 100%; overflow: hidden;">
 		        <div style="position: relative; text-align: center;">
 		            <!-- Jssor Slider Begin -->
@@ -243,56 +213,13 @@
 		                <!-- Slides Container -->
 		                <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1920px; height: 1080px;
 		                    overflow: hidden;">
-		                    <div>
-		                        <div id="sliderh1_container" class="sliderh1" style="position: relative; top: 0px; left: 0px; width: 1920px;
-		                            height: 1080px;">
-
-		                            <!-- Slides Container -->
-		                            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1920px; height: 1080px;
-		                                overflow: hidden;">
-		                                <div><img u="image" src="imgs/food/1.jpg" /></div>
-		                                <div><img u="image" src="imgs/food/2.jpg" /></div>
-		                                <div><img u="image" src="imgs/food/3.jpg" /></div>
-		                                <div><img u="image" src="imgs/food/4.jpg" /></div>
-		                                <div><img u="image" src="imgs/food/5.jpg" /></div>
-		                                <div><img u="image" src="imgs/food/6.jpg" /></div>
-		                                <img u="any" class="info" src="imgs/food/food_intro.png" />
-		                            </div>
-		                        </div>
-		                    </div>
-		                    <div>
-		                        <div id="sliderh2_container" class="sliderh2" style="position: relative; top: 0px; left: 0px; width: 1920px;
-		                            height: 1080px;">
-
-		                            <!-- Slides Container -->
-		                            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1920px; height: 1080px;
-		                                overflow: hidden;">
-		                                <div><img u="image" src="imgs/social/1.jpg" /></div>
-		                                <div><img u="image" src="imgs/social/2.jpg" /></div>
-		                                <div><img u="image" src="imgs/social/3.jpg" /></div>
-		                                <div><img u="image" src="imgs/social/4.jpg" /></div>
-		                                <div><img u="image" src="imgs/social/5.jpg" /></div>
-		                                <div><img u="image" src="imgs/social/6.jpg" /></div>
-		                                <img u="any" class="info" src="imgs/social/social_intro.png" />
-		                            </div>
-		                        </div>
-		                    </div>
-		                    <div>
-		                        <div id="sliderh3_container" class="sliderh3" style="position: relative; top: 0px; left: 0px; width: 1920px;
-		                            height: 1080px;">
-
-		                            <!-- Slides Container -->
-		                            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1920px; height: 1080px;
-		                                overflow: hidden;">
-		                                <div><img u="image" src="imgs/firstYear/2.jpg" /></div>
-		                                <div><img u="image" src="imgs/firstYear/3.jpg" /></div>
-		                                <div><img u="image" src="imgs/firstYear/4.jpg" /></div>
-		                                <div><img u="image" src="imgs/firstYear/5.jpg" /></div>
-		                                <div><img u="image" src="imgs/firstYear/6.jpg" /></div>
-		                                <img u="any" class="info" src="imgs/firstYear/firstYear_intro.png" />
-		                            </div>
-		                        </div>
-		                    </div>
+                            <div><img u="image" src="imgs/food/1.jpg" /></div>
+                            <div><img u="image" src="imgs/food/2.jpg" /></div>
+                            <div><img u="image" src="imgs/food/3.jpg" /></div>
+                            <div><img u="image" src="imgs/food/4.jpg" /></div>
+                            <div><img u="image" src="imgs/food/5.jpg" /></div>
+                            <div><img u="image" src="imgs/food/6.jpg" /></div>
+                            <img u="any" class="info" src="imgs/food/food_intro.png" />
 		                </div>
 		            </div>
 		            <!-- Jssor Slider End -->
@@ -300,6 +227,51 @@
 		    </div>
 		</div>
 		<div class="section" id="section3">
+		    <div style="position: relative; width: 100%; overflow: hidden;">
+		        <div style="position: relative; text-align: center;">
+		            <!-- Jssor Slider Begin -->
+		            <!-- You can move inline styles to css file or css block. -->
+		            <div id="slider2_container" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1920px; height: 1080px;">
+
+		                <!-- Slides Container -->
+		                <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1920px; height: 1080px;
+		                    overflow: hidden;">
+                            <div><img u="image" src="imgs/social/1.jpg" /></div>
+                            <div><img u="image" src="imgs/social/2.jpg" /></div>
+                            <div><img u="image" src="imgs/social/3.jpg" /></div>
+                            <div><img u="image" src="imgs/social/4.jpg" /></div>
+                            <div><img u="image" src="imgs/social/5.jpg" /></div>
+                            <div><img u="image" src="imgs/social/6.jpg" /></div>
+                            <img u="any" class="info" src="imgs/social/social_intro.png" />		
+		                </div>
+		            </div>
+		            <!-- Jssor Slider End -->
+		        </div>
+		    </div>
+		</div>
+		<div class="section" id="section4">
+		    <div style="position: relative; width: 100%; overflow: hidden;">
+		        <div style="position: relative; text-align: center;">
+		            <!-- Jssor Slider Begin -->
+		            <!-- You can move inline styles to css file or css block. -->
+		            <div id="slider3_container" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1920px; height: 1080px;">
+
+		                <!-- Slides Container -->
+		                <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1920px; height: 1080px;
+		                    overflow: hidden;">
+                            <div><img u="image" src="imgs/firstYear/2.jpg" /></div>
+                            <div><img u="image" src="imgs/firstYear/3.jpg" /></div>
+                            <div><img u="image" src="imgs/firstYear/4.jpg" /></div>
+                            <div><img u="image" src="imgs/firstYear/5.jpg" /></div>
+                            <div><img u="image" src="imgs/firstYear/6.jpg" /></div>
+                            <img u="any" class="info" src="imgs/firstYear/firstYear_intro.png" />		
+		                </div>
+		            </div>
+		            <!-- Jssor Slider End -->
+		        </div>
+		    </div>
+		</div>
+		<div class="section" id="section5">
 			<div class="modal fade" id="kiki" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 					<div class="modal-content">
@@ -864,13 +836,13 @@
 			    <img src="imgs/team/placeholder-user-photo.png" width="600" height="600" alt="placeholder" name="placeholder">
 			</div>
 		</div>
-		<div class="section" id="section4">
+		<div class="section" id="section6">
 			<div class="intro">
 				<div class="text-box">
 				</div>
 			</div>
 		</div>
-		<div class="section" id="section5">
+		<div class="section" id="section7">
 			<div class="intro">
 				<div class="social">
 					<a href="https://www.facebook.com/pages/UWWE/1449394115303380" class="link facebook" target="_blank"><span class="fa fa-facebook-square"></span></a>

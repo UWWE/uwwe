@@ -45,7 +45,10 @@
 
 /* iPhone 5 (portrait) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-
+	.info{
+		margin-bottom: -10%;
+		margin-left: -2.1%;
+	}
 }
 
 /* iPhone 6 (landscape) ----------- */
