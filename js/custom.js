@@ -34,7 +34,7 @@ jQuery(function($){
 	/* ----------------------------------------------------------- */
 	jQuery('#slides').superslides({
       animation: 'slide',
-      play: '5000'
+      play: '5000000'
     });
 	
 	jQuery('#landing_content').superslides({
