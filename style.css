@@ -394,7 +394,7 @@ img{
 }
 
 #landing img {
-  height: 100%;
+  width: 100%;
 }
 
 /*--------------------*/
@@ -1424,7 +1424,7 @@ textarea .form-control {
 @media(max-width:991px ){
   .navbar-default .navbar-nav > li > a {font-size: 13px;padding: 15px 6px;}
   .navbar-brand {font-size: 28px;}
-  #slides{height: 600px !important;}
+  /*#slides{height: 100% !important;}*/
   .slider_caption > h2 {font-size: 48px;line-height: 48px;}
   .slider_caption > p {font-size: 18px;}
   .about_area {padding-bottom: 80px;}
@@ -1450,7 +1450,7 @@ textarea .form-control {
 	.navbar-collapse{background-color: rgba(0,0,0,0.8);} 
 	.main_nav{text-align: center;}
 	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: rgba(0,0,0,0.5);}
-	#slides {height: 360px !important;}
+	/*#slides {height: 100% !important;}*/
 	.slider_caption {margin-top: 15%;}
 	.slider_caption > h2 {font-size: 25px;line-height: 26px;}
 	.slider_caption > p {font-size: 15px;}
@@ -1496,7 +1496,7 @@ textarea .form-control {
 }
 
 @media(max-width:480px ){	
-	#slides {height: 320px !important;}
+	/*#slides {height: 100% !important;}*/
 	.slider_caption {margin-top: 20%;}
 	.slider_caption > h2 { font-size: 20px;line-height: 22px;margin-bottom: 0px;}
 	.slider_caption > p {font-size: 14px;}

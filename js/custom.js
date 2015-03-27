@@ -37,7 +37,17 @@ jQuery(function($){
       play: '5000'
     });
 	
+	jQuery('#landing_content').superslides({
+	  play: -1,
+      animation: 'slide',
+      play: '5000'
+    });
 	
+	jQuery('#about_content').superslides({
+	  play: -1,
+      animation: 'slide',
+      play: '5000'
+    });	
 	/* ----------------------------------------------------------- */
 	/*  2. Fixed Top Menubar
 	/* ----------------------------------------------------------- */
@@ -58,31 +68,31 @@ jQuery(function($){
 	/* ----------------------------------------------------------- */
 	
 
-    $('.featured_slider').slick({
-      dots: true,
-      infinite: true,      
-      speed: 800,
-      arrows:false,      
-      slidesToShow: 1,
-      slide: 'div',
-      autoplay: true,
-      fade: true,
-      autoplaySpeed: 5000,
-      cssEase: 'linear'
-    });
+    // $('.featured_slider').slick({
+    //   dots: true,
+    //   infinite: true,      
+    //   speed: 800,
+    //   arrows:false,      
+    //   slidesToShow: 1,
+    //   slide: 'div',
+    //   autoplay: true,
+    //   fade: true,
+    //   autoplaySpeed: 5000,
+    //   cssEase: 'linear'
+    // });
 
 
 	/* ----------------------------------------------------------- */
 	/*  4. Skill Circle
 	/* ----------------------------------------------------------- */
 
-	$('#myStathalf').circliful();
-	$('#myStat').circliful();
-	$('#myStathalf2').circliful();
-	$('#myStat2').circliful();
-	$('#myStat3').circliful();
-	$('#myStat4').circliful();
-	$('#myStathalf3').circliful();
+	// $('#myStathalf').circliful();
+	// $('#myStat').circliful();
+	// $('#myStathalf2').circliful();
+	// $('#myStat2').circliful();
+	// $('#myStat3').circliful();
+	// $('#myStat4').circliful();
+	// $('#myStathalf3').circliful();
 
 
 	/* ----------------------------------------------------------- */
@@ -264,106 +274,106 @@ jQuery(function($){
 	/* ----------------------------------------------------------- */
 
 
-    $('.blog_slider').slick({
-		  dots: false,
-		  infinite: true,
-		  speed: 300,
-		  slidesToShow: 3,
-		  slidesToScroll: 3,
-		  responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 3,
-		        infinite: true,
-		        dots: true
-		      }
-		    },
-		    {
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    }
-		]
-	});
+ //    $('.blog_slider').slick({
+	// 	  dots: false,
+	// 	  infinite: true,
+	// 	  speed: 300,
+	// 	  slidesToShow: 3,
+	// 	  slidesToScroll: 3,
+	// 	  responsive: [
+	// 	    {
+	// 	      breakpoint: 1024,
+	// 	      settings: {
+	// 	        slidesToShow: 3,
+	// 	        slidesToScroll: 3,
+	// 	        infinite: true,
+	// 	        dots: true
+	// 	      }
+	// 	    },
+	// 	    {
+	// 	      breakpoint: 600,
+	// 	      settings: {
+	// 	        slidesToShow: 2,
+	// 	        slidesToScroll: 2
+	// 	      }
+	// 	    },
+	// 	    {
+	// 	      breakpoint: 480,
+	// 	      settings: {
+	// 	        slidesToShow: 1,
+	// 	        slidesToScroll: 1
+	// 	      }
+	// 	    }
+	// 	]
+	// });
 
 
 	/* ----------------------------------------------------------- */
 	/*  9. TESTIMONIAL SLIDER
 	/* ----------------------------------------------------------- */
 
-	$('.testimonial_slider').slick({
-      dots: true,
-      infinite: true,      
-      speed: 800,
-      arrows:false,      
-      slidesToShow: 1,
-      slide: 'li',
-      autoplay: true,
-      fade: true,
-      autoplaySpeed: 3000,
-      cssEase: 'linear'
-    });
+	// $('.testimonial_slider').slick({
+ //      dots: true,
+ //      infinite: true,      
+ //      speed: 800,
+ //      arrows:false,      
+ //      slidesToShow: 1,
+ //      slide: 'li',
+ //      autoplay: true,
+ //      fade: true,
+ //      autoplaySpeed: 3000,
+ //      cssEase: 'linear'
+ //    });
 
 
     /* ----------------------------------------------------------- */
 	/*  10. CLIENTS SLIDER
 	/* ----------------------------------------------------------- */
 
-    $('.clients_slider').slick({
-		  dots: false,
-		  infinite: true,
-		  speed: 300,
-		  slidesToShow: 4,
-		  slidesToScroll: 4,
-		  responsive: [
-		    {
-		      breakpoint: 1199,
-		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 3,
-		        infinite: true,
-		        dots: true
-		      }
-		    },
-		    {
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    }
-		]
-	});
+ //    $('.clients_slider').slick({
+	// 	  dots: false,
+	// 	  infinite: true,
+	// 	  speed: 300,
+	// 	  slidesToShow: 4,
+	// 	  slidesToScroll: 4,
+	// 	  responsive: [
+	// 	    {
+	// 	      breakpoint: 1199,
+	// 	      settings: {
+	// 	        slidesToShow: 3,
+	// 	        slidesToScroll: 3,
+	// 	        infinite: true,
+	// 	        dots: true
+	// 	      }
+	// 	    },
+	// 	    {
+	// 	      breakpoint: 600,
+	// 	      settings: {
+	// 	        slidesToShow: 2,
+	// 	        slidesToScroll: 2
+	// 	      }
+	// 	    },
+	// 	    {
+	// 	      breakpoint: 480,
+	// 	      settings: {
+	// 	        slidesToShow: 1,
+	// 	        slidesToScroll: 1
+	// 	      }
+	// 	    }
+	// 	]
+	// });
 
 
     /* ----------------------------------------------------------- */
 	/*  11. Google Map
 	/* ----------------------------------------------------------- */
 
-	  var zoom= $('#map_canvas').gmap('option', 'zoom');
+	  // var zoom= $('#map_canvas').gmap('option', 'zoom');
       
-      $('#map_canvas').gmap().bind('init', function(ev, map) {
-        $('#map_canvas').gmap('addMarker', {'position': '57.7973433,12.0502107', 'bounds': true});
-        $('#map_canvas').gmap('option', 'zoom', 13);
-      });
+   //    $('#map_canvas').gmap().bind('init', function(ev, map) {
+   //      $('#map_canvas').gmap('addMarker', {'position': '57.7973433,12.0502107', 'bounds': true});
+   //      $('#map_canvas').gmap('option', 'zoom', 13);
+   //    });
 
 
 	/* ----------------------------------------------------------- */
@@ -479,12 +489,12 @@ jQuery(function($){
 
 
 
-      $(".main").onepage_scroll({
-        sectionContainer: "section",
-        responsiveFallback: 600,
-        loop: false,
-        pagination: false,
-      });
+      // $(".main").onepage_scroll({
+      //   sectionContainer: "section",
+      //   responsiveFallback: 600,
+      //   loop: false,
+      //   pagination: false,
+      // });
 
 
 
