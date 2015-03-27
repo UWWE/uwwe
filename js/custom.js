@@ -459,4 +459,51 @@ jQuery(function($){
 	$('.navbar-nav').on('click', 'li a', function() {
 	  $('.navbar-collapse').collapse('hide');
 	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: false,
+        pagination: false,
+      });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 });

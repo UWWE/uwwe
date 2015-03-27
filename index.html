@@ -29,6 +29,11 @@
     <link rel="stylesheet" href="css/animate.css">  
     <!-- Elastic grid css file -->
     <link rel="stylesheet" href="css/elastic_grid.css"> 
+
+    <link rel="stylesheet" href="css/onepage-scroll.css"> 
+
+
+
     <!-- Circle counter cdn css file -->
     <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/css/jquery.circliful.css'>    
     <!-- Default Theme css file -->
@@ -86,8 +91,8 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul id="top-menu" class="nav navbar-nav navbar-right main_nav">
-              <li class="active"><a href="#">首頁</a></li>
-              <li><a href="#activity">活动</a></li>
+              <li class="active"><a href="#landing">首頁</a></li>
+              <li><a href="#activities">活动</a></li>
               <li><a href="#about">介绍</a></li>
               <li><a href="#team">团队</a></li>       
               <li><a href="#contact">联系我们</a></li>                           
@@ -102,244 +107,241 @@
     </header>
     <!--=========== End HEADER SECTION ================--> 
 
-    <section id="activities">
-      <!-- BEGIN SLIDER AREA-->
-      <div class="slider_area">
-        <!-- BEGIN SLIDER-->          
-        <div id="slides">
-          <ul class="slides-container">
+    <div class="main">
+        <section id="landing">
+        </section>
 
-            <!-- THE FIRST SLIDE-->
-            <li>
-              <!-- FIRST SLIDE OVERLAY -->
-              <img src="img/food/1.jpg" alt="img">
-              <!-- FIRST SLIDE CAPTION-->
-              <div class="slider_caption">             
-              </div>
-            </li>
+        <section id="activities">
+          <!-- BEGIN SLIDER AREA-->
+          <div class="slider_area">
+            <!-- BEGIN SLIDER-->          
+            <div id="slides">
+              <ul class="slides-container">
 
-            <!-- THE SECOND SLIDE-->
-            <li>
-              <!-- SECOND SLIDE OVERLAY -->
-              <img src="img/social/1.jpg" alt="img">
-              <!-- SECOND SLIDE CAPTION-->
-              <div class="slider_caption">
-              </div>
-            </li>
+                <!-- THE FIRST SLIDE-->
+                <li>
+                  <!-- FIRST SLIDE OVERLAY -->
+                  <img src="img/food/1.jpg" alt="img">
+                  <!-- FIRST SLIDE CAPTION-->
+                  <div class="slider_caption">             
+                  </div>
+                </li>
 
-            <!-- THE THIRD SLIDE-->
-            <li>
-              <!-- THIRD SLIDE OVERLAY -->
-              <img src="img/firstYear/2.jpg" alt="img">
-              <!-- THIRD SLIDE CAPTION-->
-              <div class="slider_caption">               
-              </div>
-            </li>
-          </ul>
-          <!-- BEGAIN SLIDER NAVIGATION -->
-          <nav class="slides-navigation">
-            <!-- PREV IN THE SLIDE -->
-            <a class="prev" href="/item1">
-              <span class="icon-wrap"></span>
-              <h3><strong>Prev</strong></h3>
-            </a>
-            <!-- NEXT IN THE SLIDE -->
-            <a class="next" href="/item3">
-              <span class="icon-wrap"></span>
-              <h3><strong>Next</strong></h3>
-            </a>
-          </nav>       
-        </div>
-        <!-- END SLIDER-->          
-      </div>
-      <!-- END SLIDER AREA -->
-    </section>
+                <!-- THE SECOND SLIDE-->
+                <li>
+                  <!-- SECOND SLIDE OVERLAY -->
+                  <img src="img/social/1.jpg" alt="img">
+                  <!-- SECOND SLIDE CAPTION-->
+                  <div class="slider_caption">
+                  </div>
+                </li>
 
-    <!--=========== BEGAIN TEAM SECTION ================-->
-    <section id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <!-- BEGAIN ABOUT HEADING -->
-            <div class="heading">
-              <h2 class="wow fadeInLeftBig">团队</h2>            
+                <!-- THE THIRD SLIDE-->
+                <li>
+                  <!-- THIRD SLIDE OVERLAY -->
+                  <img src="img/firstYear/2.jpg" alt="img">
+                  <!-- THIRD SLIDE CAPTION-->
+                  <div class="slider_caption">               
+                  </div>
+                </li>
+              </ul>
+              <!-- BEGAIN SLIDER NAVIGATION -->
+              <nav class="slides-navigation">
+                <!-- PREV IN THE SLIDE -->
+                <a class="prev" href="/item1">
+                  <span class="icon-wrap"></span>
+                  <h3><strong>Prev</strong></h3>
+                </a>
+                <!-- NEXT IN THE SLIDE -->
+                <a class="next" href="/item3">
+                  <span class="icon-wrap"></span>
+                  <h3><strong>Next</strong></h3>
+                </a>
+              </nav>       
             </div>
-            <div class="team_area">
-              <!-- BEGAIN TEAM SLIDER -->
-              <div class="team_slider">  
-                <!-- BEGAIN SINGLE TEAM SLIDE#1 -->              
-                <div class="col-lg-3 col-md-3 col-sm-4">
-                  <div class="single_team wow fadeInUp">
-                    <div class="team_img">
-                      <img src="img/team/profile/carl.jpg" alt="img">
+            <!-- END SLIDER-->          
+          </div>
+          <!-- END SLIDER AREA -->
+        </section>
+
+        <!--=========== BEGAIN TEAM SECTION ================-->
+        <section id="team">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <!-- BEGAIN ABOUT HEADING -->
+                <div class="heading">
+                  <h2 class="wow fadeInLeftBig">团队</h2>            
+                </div>
+                <div class="team_area">
+                  <!-- BEGAIN TEAM SLIDER -->
+                  <div class="team_slider">  
+                    <!-- BEGAIN SINGLE TEAM SLIDE#1 -->              
+                    <div class="col-lg-3 col-md-3 col-sm-4">
+                      <div class="single_team wow fadeInUp">
+                        <div class="team_img">
+                          <img src="img/team/profile/carl.jpg" alt="img">
+                        </div>
+                        <h5 class="">Carl Weng</h5>
+                        <span>Founder</span>                        
+                        <p>一个把吃、玩和旅行当作人生主旋律的人。</p>
+                        <div class="team_social">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="#"><i class="fa fa-google-plus"></i></a>
+                          <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
                     </div>
-                    <h5 class="">Carl Weng</h5>
-                    <span>Founder</span>                        
-                    <p>一个把吃、玩和旅行当作人生主旋律的人。</p>
-                    <div class="team_social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <!-- BEGAIN SINGLE TEAM SLIDE#2 -->
+                    <div class="col-lg-3 col-md-3 col-sm-4">
+                      <div class="single_team wow fadeInUp">
+                        <div class="team_img">
+                          <img src="img/team/profile/peiran.jpg" alt="img">
+                        </div>
+                        <h5>Peiran Wang</h5>
+                        <span>CMS Developer</span>                        
+                        <p>没什么特点, 普通人。</p>
+                        <div class="team_social">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="#"><i class="fa fa-google-plus"></i></a>
+                          <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
                     </div>
+                    <!-- BEGAIN SINGLE TEAM SLIDE#3 -->
+                    <div class="col-lg-3 col-md-3 col-sm-4">
+                      <div class="single_team wow fadeInUp">
+                        <div class="team_img">
+                          <img src="img/team/profile/marc.jpg" alt="img">
+                        </div>
+                        <h5>Marc Lo</h5>
+                        <span>Manager</span>                        
+                        <p>英雄莫问出处, 学渣莫问成绩. 拍视频弃成绩就是我</p>
+                        <div class="team_social">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="#"><i class="fa fa-google-plus"></i></a>
+                          <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- BEGAIN SINGLE TEAM SLIDE#4 -->
+                    <div class="col-lg-3 col-md-3 col-sm-4">
+                      <div class="single_team wow fadeInUp">
+                        <div class="team_img">
+                          <img src="img/team/profile/lcd.jpg" alt="img">
+                        </div>
+                        <h5>Richard Li</h5>
+                        <span>Developer</span>                        
+                        <p>平时喜欢摄影(pai zhao)，文艺(zhuang bi)。</p>
+                        <div class="team_social">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="#"><i class="fa fa-google-plus"></i></a>
+                          <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- BEGAIN SINGLE TEAM SLIDE#5 -->
+                    <div class="col-lg-3 col-md-3 col-sm-4">
+                      <div class="single_team wow fadeInUp">
+                        <div class="team_img">
+                          <img src="img/team/profile/marc.jpg" alt="img">
+                        </div>
+                        <h5>Jamie Sidens</h5>
+                        <span>Programmer</span>                        
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
+                        <div class="team_social">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="#"><i class="fa fa-google-plus"></i></a>
+                          <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- BEGAIN SINGLE TEAM SLIDE#6 -->
+                    <div class="col-lg-3 col-md-3 col-sm-4">
+                      <div class="single_team wow fadeInUp">
+                        <div class="team_img">
+                          <img src="img/team/profile/marc.jpg" alt="img">
+                        </div>
+                        <h5>Jamie Sidens</h5>
+                        <span>Web Designer</span>                        
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
+                        <div class="team_social">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="#"><i class="fa fa-google-plus"></i></a>
+                          <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- BEGAIN SINGLE TEAM SLIDE#7 -->
+                    <div class="col-lg-3 col-md-3 col-sm-4">
+                      <div class="single_team wow fadeInUp">
+                        <div class="team_img">
+                          <img src="img/team/profile/marc.jpg" alt="img">
+                        </div>
+                        <h5>Jone Doe</h5>
+                        <span>Marketing Head</span>                        
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
+                        <div class="team_social">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="#"><i class="fa fa-google-plus"></i></a>
+                          <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>                              
                   </div>
                 </div>
-                <!-- BEGAIN SINGLE TEAM SLIDE#2 -->
-                <div class="col-lg-3 col-md-3 col-sm-4">
-                  <div class="single_team wow fadeInUp">
-                    <div class="team_img">
-                      <img src="img/team/profile/peiran.jpg" alt="img">
-                    </div>
-                    <h5>Peiran Wang</h5>
-                    <span>CMS Developer</span>                        
-                    <p>没什么特点, 普通人。</p>
-                    <div class="team_social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- BEGAIN SINGLE TEAM SLIDE#3 -->
-                <div class="col-lg-3 col-md-3 col-sm-4">
-                  <div class="single_team wow fadeInUp">
-                    <div class="team_img">
-                      <img src="img/team/profile/marc.jpg" alt="img">
-                    </div>
-                    <h5>Marc Lo</h5>
-                    <span>Manager</span>                        
-                    <p>英雄莫问出处, 学渣莫问成绩. 拍视频弃成绩就是我</p>
-                    <div class="team_social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- BEGAIN SINGLE TEAM SLIDE#4 -->
-                <div class="col-lg-3 col-md-3 col-sm-4">
-                  <div class="single_team wow fadeInUp">
-                    <div class="team_img">
-                      <img src="img/team/profile/lcd.jpg" alt="img">
-                    </div>
-                    <h5>Richard Li</h5>
-                    <span>Developer</span>                        
-                    <p>平时喜欢摄影(pai zhao)，文艺(zhuang bi)。</p>
-                    <div class="team_social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- BEGAIN SINGLE TEAM SLIDE#5 -->
-                <div class="col-lg-3 col-md-3 col-sm-4">
-                  <div class="single_team wow fadeInUp">
-                    <div class="team_img">
-                      <img src="img/team/profile/marc.jpg" alt="img">
-                    </div>
-                    <h5>Jamie Sidens</h5>
-                    <span>Programmer</span>                        
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
-                    <div class="team_social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- BEGAIN SINGLE TEAM SLIDE#6 -->
-                <div class="col-lg-3 col-md-3 col-sm-4">
-                  <div class="single_team wow fadeInUp">
-                    <div class="team_img">
-                      <img src="img/team/profile/marc.jpg" alt="img">
-                    </div>
-                    <h5>Jamie Sidens</h5>
-                    <span>Web Designer</span>                        
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
-                    <div class="team_social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- BEGAIN SINGLE TEAM SLIDE#7 -->
-                <div class="col-lg-3 col-md-3 col-sm-4">
-                  <div class="single_team wow fadeInUp">
-                    <div class="team_img">
-                      <img src="img/team/profile/marc.jpg" alt="img">
-                    </div>
-                    <h5>Jone Doe</h5>
-                    <span>Marketing Head</span>                        
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
-                    <div class="team_social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>                              
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!--=========== END TEAM SECTION ================-->
+        </section>
+        <!--=========== END TEAM SECTION ================-->
 
-    <!--=========== BEGAIN CONTACT SECTION ================-->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <!-- START CONTACT HEADING -->
-            <div class="heading">
-              <h2 class="wow fadeInLeftBig">联系我们</h2>
-              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-            </div>
-          </div>
-        </div>       
-        <div class="row">
-          <!-- BEGAIN CONTACT CONTENT -->
-          <div class="contact_content">
-            <!-- BEGAIN CONTACT FORM -->
-            <div class="col-lg-5 col-md-5 col-sm-5">
-              <div class="contact_form">
-
-                <!-- FOR CONTACT FORM MESSAGE -->
-                <div id="form-messages"></div>
-
-                <form>
-                  <input class="form-control" type="text" placeholder="Name">
-                  <input class="form-control" type="email" placeholder="Email">
-                  <input class="form-control" type="text" placeholder="Subject">
-                  <textarea class="form-control" cols="30" rows="10" placeholder="Your Message"></textarea>
-                   <input class="submit_btn" type="submit" value="Send">  
-                </form>
+        <!--=========== BEGAIN CONTACT SECTION ================-->
+        <section id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <!-- START CONTACT HEADING -->
+                <div class="heading">
+                  <h2 class="wow fadeInLeftBig">联系我们</h2>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                </div>
               </div>
-            </div>
-            <!-- BEGAIN CONTACT MAP -->
-            <div class="col-lg-7 col-md-7 col-sm-7">
-              <div class="contact_map">
-              <!-- BEGAIN GOOGLE MAP -->
-               <div id="map_canvas"></div>
-              </div>
-            </div>           
-          </div>
-        </div>      
-      </div>             
-    </section>
-    <!--=========== END CONTACT SECTION ================-->
+            </div>       
+            <div class="row">
+              <!-- BEGAIN CONTACT CONTENT -->
+              <div class="contact_content">
+                <!-- BEGAIN CONTACT FORM -->
+                <div class="col-lg-5 col-md-5 col-sm-5">
+                  <div class="contact_form">
 
+                    <!-- FOR CONTACT FORM MESSAGE -->
+                    <div id="form-messages"></div>
+
+                    <form>
+                      <input class="form-control" type="text" placeholder="Name">
+                      <input class="form-control" type="email" placeholder="Email">
+                      <input class="form-control" type="text" placeholder="Subject">
+                      <textarea class="form-control" cols="30" rows="10" placeholder="Your Message"></textarea>
+                       <input class="submit_btn" type="submit" value="Send">  
+                    </form>
+                  </div>
+                </div>          
+              </div>
+            </div>      
+          </div>             
+        </section>
+        <!--=========== END CONTACT SECTION ================-->
+    </div>
      <!--=========== BEGAIN FOOTER ================-->
-     <footer id="footer">
+<!--      <footer id="footer">
        <div class="container">
          <div class="row">
            <div class="col-lg-6 col-md-6 col-sm-6">
@@ -358,7 +360,7 @@
            </div>
          </div>
        </div>
-      </footer>
+      </footer> -->
       <!--=========== END FOOTER ================-->
 
      <!-- Javascript Files
@@ -387,5 +389,8 @@
 
     <!-- Custom js-->
     <script src="js/custom.js"></script>
+
+
+    <script src="js/jquery.onepage-scroll.min.js"></script>    
   </body>
 </html>
