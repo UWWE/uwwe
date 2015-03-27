@@ -20,7 +20,7 @@
 	13. PRELOADER 
 	14. MENU SCROLL 
 	15. MOBILE MENU CLOSE 
-	16. Fullpage JS	
+	16. Onepage-scroll 	
 	
 **/
 
@@ -491,7 +491,9 @@ jQuery(function($){
 
 
 
-
+	/* ----------------------------------------------------------- */
+	/*  16. Onepage-scroll 
+	/* ----------------------------------------------------------- */ 
 
       // $(".main").onepage_scroll({
       //   sectionContainer: "section",
