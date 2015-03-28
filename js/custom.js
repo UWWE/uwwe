@@ -38,15 +38,13 @@ jQuery(function($){
     });
 	
 	jQuery('#landing_content').superslides({
-	  play: -1,
-      animation: 'slide',
-      play: '50000000000000000000'
+	  play: false,
+      animation: 'fade',
     });
 	
 	jQuery('#about_content').superslides({
-	  play: -1,
-      animation: 'slide',
-      play: '50000000000000000000'
+	  play: false,
+      animation: 'fade',
     });	
 	/* ----------------------------------------------------------- */
 	/*  2. Fixed Top Menubar
