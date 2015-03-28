@@ -518,9 +518,9 @@ jQuery(function($){
 	  $('[data-toggle="tooltip"]').tooltip()
 	})
 
-	$('#landing_content').hammer().on('swipeup', function() {	
-		$(window).scrollTo(document.getElementById("activities"), 800);
-	});
+	// $('#landing_content').hammer().on('swipeup', function() {	
+	// 	$(window).scrollTo(document.getElementById("activities"), 800);
+	// });
 
 	$('#slides').hammer().on('swipeleft', function() {
 	$(this).superslides('animate', 'next');
@@ -528,31 +528,31 @@ jQuery(function($){
 	$('#slides').hammer().on('swiperight', function() {
 	$(this).superslides('animate', 'prev');
 	});
-	$('#slides').hammer().on('swipedown', function() {	
-	    $('html, body').animate({scrollTop : 0},800);
-	    return false;
-	});
-	$('#slides').hammer().on('swipeup', function() {	
-		$(window).scrollTo(document.getElementById("about"), 800);
-	});
+	// $('#slides').hammer().on('swipedown', function() {	
+	//     $('html, body').animate({scrollTop : 0},800);
+	//     return false;
+	// });
+	// $('#slides').hammer().on('swipeup', function() {	
+	// 	$(window).scrollTo(document.getElementById("about"), 800);
+	// });
 
-	$('#about').hammer().on('swipedown', function() {	
-		$(window).scrollTo(document.getElementById("activities"), 800);
-	    return false;
-	});
-	$('#about').hammer().on('swipeup', function() {	
-		$(window).scrollTo(document.getElementById("team"), 800);
-	});
+	// $('#about').hammer().on('swipedown', function() {	
+	// 	$(window).scrollTo(document.getElementById("activities"), 800);
+	//     return false;
+	// });
+	// $('#about').hammer().on('swipeup', function() {	
+	// 	$(window).scrollTo(document.getElementById("team"), 800);
+	// });
 
-	$('#team').hammer().on('swipedown', function() {	
-		$(window).scrollTo(document.getElementById("about"), 800);
-	    return false;
-	});
-	$('#team').hammer().on('swipeup', function() {	
-		$(window).scrollTo(document.getElementById("contact"), 800);
-	});
+	// $('#team').hammer().on('swipedown', function() {	
+	// 	$(window).scrollTo(document.getElementById("about"), 800);
+	//     return false;
+	// });
+	// $('#team').hammer().on('swipeup', function() {	
+	// 	$(window).scrollTo(document.getElementById("contact"), 800);
+	// });
 
-	$('#contact').hammer().on('swipedown', function() {	
-		$(window).scrollTo(document.getElementById("team"), 800);
-	});
+	// $('#contact').hammer().on('swipedown', function() {	
+	// 	$(window).scrollTo(document.getElementById("team"), 800);
+	// });
 });

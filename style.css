@@ -1693,7 +1693,8 @@ textarea .form-control {
 	.slider_caption > p {font-size: 14px;}
 	.slider_caption > a { font-size: 15px; margin-top: 20px;  padding: 8px 10px;}
   #team {
-    padding: 100px 0;
+    padding: 50px 0;
+    /*padding: 100px 0;*/
   }
 	.wagwep-container ul#portfolio-filter li {width: auto;}
 	.wagwep-container ul#portfolio-filter a {font-size: 10px;margin: 0 0 2px;padding: 5px;text-align: center;text-indent: 0;}
@@ -1726,8 +1727,8 @@ textarea .form-control {
     padding-top: 0;
   }
   .social {
-    padding-top: 0;
-    padding-bottom: 11vh;
+    padding-top: 0;/*
+    padding-bottom: 11vh;*/
   }
   #contact {padding: 10vh 0 0;}
   .social .link {
@@ -1762,7 +1763,8 @@ textarea .form-control {
 	/*.slides-navigation h3 {display: none;}*/
 	.slider_caption > h2 {font-size: 18px;line-height: 20px;}
   #team {
-    padding: 65px 0;
+    /*padding: 65px 0;*/
+    padding: 50px 0;
   }
 	.panel-title {font-size: 17px;}
 	.about_area {padding-bottom: 0px;}
@@ -1829,7 +1831,8 @@ textarea .form-control {
 @media(max-width:320px ){
 	.slider_caption > h2 {font-size: 15px;line-height: 18px;}
   #team {
-    padding: 65px 0 0px;
+    /*padding: 65px 0 0px;*/
+    padding: 50px 0 0px;
   }
 	.single_service > .service_title:after {left: 29%;}
 	.blog_slider .slick-prev {left: 70.5%;}
