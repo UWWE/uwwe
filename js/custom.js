@@ -40,13 +40,13 @@ jQuery(function($){
 	jQuery('#landing_content').superslides({
 	  play: -1,
       animation: 'slide',
-      play: '5000'
+      play: '50000000000000000000'
     });
 	
 	jQuery('#about_content').superslides({
 	  play: -1,
       animation: 'slide',
-      play: '5000'
+      play: '50000000000000000000'
     });	
 	/* ----------------------------------------------------------- */
 	/*  2. Fixed Top Menubar
