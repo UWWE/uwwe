@@ -1784,7 +1784,7 @@ textarea .form-control {
 @media(max-width:320px ){
 	.slider_caption > h2 {font-size: 15px;line-height: 18px;}
   #team {
-    padding: 50px 0;
+    padding: 50px 0 0px;
   }
 	.single_service > .service_title:after {left: 29%;}
 	.blog_slider .slick-prev {left: 70.5%;}
