@@ -1640,7 +1640,7 @@ textarea .form-control {
 @media(max-width:360px ){
 	.slider_caption {margin-top: 28%;}
 	.slider_caption > a {margin-top: 10px;}
-	.slides-navigation h3 {display: none;}
+	/*.slides-navigation h3 {display: none;}*/
 	.slider_caption > h2 {font-size: 18px;line-height: 20px;}
 	.panel-title {font-size: 17px;}
 	.about_area {padding-bottom: 0px;}
@@ -1655,7 +1655,7 @@ textarea .form-control {
 	.subscr_btn {width: 29%;font-size: 15px;}
 	.heading h2 { font-size: 25px;line-height: 30px;}
 	.single_service > .service_title:after {left: 32%;}
-	.slides-navigation {display: none;}
+	/*.slides-navigation {display: none;}*/
   .footer_right>p{text-align: center;}
 }
 
