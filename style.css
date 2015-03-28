@@ -81,7 +81,7 @@ img{
   left:0;
   right:0;
   bottom:0;
-  background-color:#000; /* change if the mask should have another color then white */
+  background-color:#fff; /* change if the mask should have another color then white */
   z-index:99999; /* makes sure it stays on top */
 }
 
@@ -91,8 +91,8 @@ img{
   position:absolute;
   left:50%; /* centers the loading animation horizontally one the screen */
   top:50%; /* centers the loading animation vertically one the screen */
-  background-image:url(img/status.gif); /* path to your loading animation */
-  background-repeat:no-repeat;
+  background-image:url(img/ajax-loader.gif); /* path to your loading animation */
+  background-repeat:repeat-x;
   background-position:center;
   margin:-100px 0 0 -100px; /* is width and height divided by two */
 }
@@ -188,7 +188,7 @@ img{
 }
 
 .past-main2-child {
-  color: #ffc400 !important;
+  color: #ffcc00 !important;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
