@@ -1624,6 +1624,30 @@ textarea .form-control {
   .social {
     padding-top: 0;
   }
+  .social .link {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    border: 0.5vw dashed #78797A;
+    background-clip: content-box;
+    padding: 1.5vw;
+    transition: .5s;
+    color: #D7D0BE;
+    margin: 2.5vw;
+    text-shadow: 0 -0.16vw 0 rgba(0, 0, 0, 0.2),
+   0 -0.16vw 0 rgba(255, 255, 255, 0.2);
+    font-size: 11.5vw;
+  }
+  .social .link:hover {
+    padding: 3.5vw;
+    color: white;
+    margin-left: -0.83vw;
+    -webkit-transform: translateX(1.67vw) rotate(360deg);
+    transform: translateX(1.67vw) rotate(360deg);
+  }
 }
 
 @media(max-width:480px ){	
@@ -1665,6 +1689,30 @@ textarea .form-control {
     padding-top: 0;
   }
   #contact {padding: 10vh 0 0;}
+  .social .link {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    border: 0.5vw dashed #78797A;
+    background-clip: content-box;
+    padding: 1.5vw;
+    transition: .5s;
+    color: #D7D0BE;
+    margin: 2.5vw;
+    text-shadow: 0 -0.16vw 0 rgba(0, 0, 0, 0.2),
+   0 -0.16vw 0 rgba(255, 255, 255, 0.2);
+    font-size: 11.5vw;
+  }
+  .social .link:hover {
+    padding: 3.5vw;
+    color: white;
+    margin-left: -0.83vw;
+    -webkit-transform: translateX(1.67vw) rotate(360deg);
+    transform: translateX(1.67vw) rotate(360deg);
+  }
 }
 
 @media(max-width:360px ){
@@ -1707,6 +1755,30 @@ textarea .form-control {
     padding-top: 0;
   }
   #contact {padding: 10vh 0 0;}
+  .social .link {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    border: 0.5vw dashed #78797A;
+    background-clip: content-box;
+    padding: 1.5vw;
+    transition: .5s;
+    color: #D7D0BE;
+    margin: 2.5vw;
+    text-shadow: 0 -0.16vw 0 rgba(0, 0, 0, 0.2),
+   0 -0.16vw 0 rgba(255, 255, 255, 0.2);
+    font-size: 11.5vw;
+  }
+  .social .link:hover {
+    padding: 3.5vw;
+    color: white;
+    margin-left: -0.83vw;
+    -webkit-transform: translateX(1.67vw) rotate(360deg);
+    transform: translateX(1.67vw) rotate(360deg);
+  }
 }
 
 @media(max-width:320px ){
