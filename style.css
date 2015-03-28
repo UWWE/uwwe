@@ -1709,5 +1709,10 @@ textarea .form-control {
   #intro_intro {
     margin-top: 50%;
   }
-	
+  .team_area {
+    float: left;
+    display: inline;
+    width: 100%;
+    padding-top: 0;
+  }
 }
