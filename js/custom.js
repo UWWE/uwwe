@@ -20,7 +20,8 @@
 	13. PRELOADER 
 	14. MENU SCROLL 
 	15. MOBILE MENU CLOSE 
-	16. Onepage-scroll 	
+	16. Onepage-scroll
+	17. Clipboard	
 	
 **/
 
@@ -46,6 +47,8 @@ jQuery(function($){
 	  play: false,
       animation: 'fade',
     });	
+
+
 	/* ----------------------------------------------------------- */
 	/*  2. Fixed Top Menubar
 	/* ----------------------------------------------------------- */
@@ -427,7 +430,7 @@ jQuery(function($){
 	}
 	ellipsis.start();
 
-	
+
 	  jQuery(window).load(function() { // makes sure the whole site is loaded
       ellipsis.stop();
       $('#preloader').delay(100).fadeOut('slow'); // will fade out the white DIV that covers the website.
@@ -497,22 +500,6 @@ jQuery(function($){
 	});
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	/* ----------------------------------------------------------- */
 	/*  16. Onepage-scroll 
 	/* ----------------------------------------------------------- */ 
@@ -524,24 +511,48 @@ jQuery(function($){
       //   pagination: false,
       // });
 
+	/* ----------------------------------------------------------- */
+	/*  16. Wechat tooltip
+	/* ----------------------------------------------------------- */ 
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
 
+	$('#landing_content').hammer().on('swipeup', function() {	
+		$(window).scrollTo(document.getElementById("activities"), 800);
+	});
 
+	$('#slides').hammer().on('swipeleft', function() {
+	$(this).superslides('animate', 'next');
+	});
+	$('#slides').hammer().on('swiperight', function() {
+	$(this).superslides('animate', 'prev');
+	});
+	$('#slides').hammer().on('swipedown', function() {	
+	    $('html, body').animate({scrollTop : 0},800);
+	    return false;
+	});
+	$('#slides').hammer().on('swipeup', function() {	
+		$(window).scrollTo(document.getElementById("about"), 800);
+	});
 
+	$('#about').hammer().on('swipedown', function() {	
+		$(window).scrollTo(document.getElementById("activities"), 800);
+	    return false;
+	});
+	$('#about').hammer().on('swipeup', function() {	
+		$(window).scrollTo(document.getElementById("team"), 800);
+	});
 
+	$('#team').hammer().on('swipedown', function() {	
+		$(window).scrollTo(document.getElementById("about"), 800);
+	    return false;
+	});
+	$('#team').hammer().on('swipeup', function() {	
+		$(window).scrollTo(document.getElementById("contact"), 800);
+	});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
+	$('#contact').hammer().on('swipedown', function() {	
+		$(window).scrollTo(document.getElementById("team"), 800);
+	});
 });
