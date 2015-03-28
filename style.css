@@ -1634,7 +1634,7 @@ textarea .form-control {
 	.testi_content:before {left: 30%;}	
 	.single_service > .service_title:after {left: 38%;}
 	.wagwep-container ul#portfolio-filter {padding: 0 3%;}	
-    .intro {
+  .intro {
     margin-top: 10%;
     max-width: 100%;
     width: 100%;
@@ -1667,6 +1667,16 @@ textarea .form-control {
 	.single_service > .service_title:after {left: 32%;}
 	/*.slides-navigation {display: none;}*/
   .footer_right>p{text-align: center;}
+  .intro {
+    margin-top: 10%;
+    max-width: 100%;
+    width: 100%;
+    position: static;
+  }
+
+  #intro_intro {
+    margin-top: 50%;
+  }
 }
 
 @media(max-width:320px ){
@@ -1676,5 +1686,15 @@ textarea .form-control {
 	.subscr_btn {font-size: 11px;}
 	.slider_caption {margin-top: 34%;}  
   .footer_right>p{text-align: center;}
+  .intro {
+    margin-top: 10%;
+    max-width: 100%;
+    width: 100%;
+    position: static;
+  }
+
+  #intro_intro {
+    margin-top: 50%;
+  }
 	
 }
