@@ -1547,9 +1547,7 @@ textarea .form-control {
     width: 70%;
     padding: 7vh 0;
   }
-  #intro_intro {
-    left: 10vw;
-  }
+
 }
   
 @media(max-width:991px ){
@@ -1578,14 +1576,13 @@ textarea .form-control {
     width: 70%;
   }
   .intro {
-    background-image: url(img/intro/intro_mobile.png);
+    margin: 20% 0 0 -5%;
+  }
+  #intro_intro {
     margin: 30% 0 0 0;
     max-width: 100%;
     width: 100%;
     position: static;
-  }
-  #intro_intro {
-    left: 10vw;
   }
 }
 
