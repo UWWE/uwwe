@@ -933,6 +933,7 @@ div[data-dimension] {
   float: left;
   padding: 80px 0;
   width: 100%;
+
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
@@ -1578,7 +1579,7 @@ textarea .form-control {
   }
   .intro {
     background-image: url(img/intro/intro_mobile.png);
-    margin-top: 30%;
+    margin: 30% 0 0 0;
     max-width: 100%;
     width: 100%;
     position: static;
@@ -1645,7 +1646,7 @@ textarea .form-control {
 
   #intro_intro {
     background-image: url(img/intro/intro_mobile.png);
-    margin-top: 30%;
+    margin: 30% 0 0 0;
     max-width: 100%;
     width: 100%;
     position: static;
@@ -1709,7 +1710,7 @@ textarea .form-control {
 	.wagwep-container ul#portfolio-filter {padding: 0 3%;}
   .slides-navigation {top: 57%}	
   .intro {
-    margin-top: 10%;
+    margin: 10% 0 0 0;
     max-width: 100%;
     width: 100%;
     position: static;
@@ -1787,7 +1788,7 @@ textarea .form-control {
 
   #intro_intro {
     background-image: url(img/intro/intro_mobile.png);
-    margin-top: 30%;
+    margin: 30% 0 0 0;
     max-width: 100%;
     width: 100%;
     position: static;
@@ -1843,7 +1844,7 @@ textarea .form-control {
   }
   #intro_intro {
     background-image: url(img/intro/intro_mobile.png);
-    margin-top: 30%;
+    margin: 30% 0 0 0;
     max-width: 100%;
     width: 100%;
     position: static;
