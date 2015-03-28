@@ -1553,6 +1553,7 @@ textarea .form-control {
   .social {
     width: 70%;
   }
+  
 }
 
 @media(max-width:767px ){
@@ -1594,7 +1595,7 @@ textarea .form-control {
 	#blog {padding: 50px 0;}
 	#testimonial {padding: 50px 0;}
 	#clients {padding: 50px 0 100px;}
-	/*#contact {padding: 50px 0 0;}*/
+	#contact {padding: 10vh 0 0;}
 	#subscribe {padding: 50px  0;}
 	.social_nav {margin-top: 20px;text-align: center;}
 	.footer_left {text-align: center;}
@@ -1618,6 +1619,9 @@ textarea .form-control {
     width: 80%;
   }
   .team_area {
+    padding-top: 0;
+  }
+  .social {
     padding-top: 0;
   }
 }
@@ -1657,6 +1661,10 @@ textarea .form-control {
   .team_area {
     padding-top: 0;
   }
+  .social {
+    padding-top: 0;
+  }
+  #contact {padding: 10vh 0 0;}
 }
 
 @media(max-width:360px ){
@@ -1695,6 +1703,10 @@ textarea .form-control {
   .team_area {
     padding-top: 0;
   }
+  .social {
+    padding-top: 0;
+  }
+  #contact {padding: 10vh 0 0;}
 }
 
 @media(max-width:320px ){
@@ -1719,4 +1731,8 @@ textarea .form-control {
   .team_area {
     padding-top: 0;
   }
+  .social {
+    padding-top: 0;
+  }
+  #contact {padding: 10vh 0 0;}
 }
