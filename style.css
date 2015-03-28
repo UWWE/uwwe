@@ -1250,7 +1250,7 @@ div[data-dimension] {
 
 
 #contact{
-	background: none repeat scroll 0 0 #f8f8f8;
+	/*background: none repeat scroll 0 0 #f8f8f8;*/
 	display: inline;
 	float: left;
 	padding: 5vh 0px 0px;
