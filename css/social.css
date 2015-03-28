@@ -73,3 +73,12 @@
 	  background-color: #EA3E30;
 	  color: white;
 	}
+
+	.qrcode {
+		background-image: url(../img/qrcode.jpg);
+		background-image: url(../img/qrcode.jpg);
+		height: 40vh;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
