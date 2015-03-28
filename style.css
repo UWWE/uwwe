@@ -1255,9 +1255,9 @@ div[data-dimension] {
 	float: left;
 	padding: 5vh 0px 0px;
 	width: 100%;
-	border-top: 1px solid #eee;
+/*	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;	
-}
+*/}
 .contact_content {
   display: inline;
   float: left;
