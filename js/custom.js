@@ -403,16 +403,33 @@ jQuery(function($){
 	/* ----------------------------------------------------------- */
 	/*  13. PRELOADER 
 	/* ----------------------------------------------------------- */ 
-	$('#status_2').hide();
-	$('#status_3').hide();
+	ellipsis = {
+	  'value' : ['', '.', '..', '...'],
+		'count' : 0,
+		'run' : false,
+		'timer' : null,
+		'element' : '.ellipsis',
+		'start' : function () {
+		  var t = this;
+			this.run = true;
+			this.timer = setInterval(function () {
+				if (t.run) {
+					$(t.element).html(t.value[t.count % t.value.length]).text();
+					t.count++;
+				}
+			}, 250);
+		},
+		'stop' : function () {						
+			this.run = false;
+			clearInterval(this.timer);
+			this.count = 0;
+		}
+	}
+	ellipsis.start();
 
-	setTimeout(function(){ $("status_2").fadeIn(); }, 500);
-	setTimeout(function(){ $("status_3").fadeIn(); }, 500);
-
+	
 	  jQuery(window).load(function() { // makes sure the whole site is loaded
-      $('#status_1').fadeOut(); // will first fade out the loading animation
-      $('#status_2').fadeOut();
-      $('#status_3').fadeOut();
+      ellipsis.stop();
       $('#preloader').delay(100).fadeOut('slow'); // will fade out the white DIV that covers the website.
       $('body').delay(100).css({'overflow':'visible'});
     })
