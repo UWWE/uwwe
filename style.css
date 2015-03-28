@@ -500,12 +500,15 @@ img{
 }
 
 #intro_intro{
+  position:absolute;
+  margin:-200px 0 0 -500px; /* is width and height divided by two */
+  width: 1000px;
+  height: 400px;
   background-image: url(img/intro/intro.png);
   background-size: contain;
   background-repeat: no-repeat;
-  max-width: 800px;
-  left: 25%;
-  top: 25%
+  left: 50%;
+  top: 50%;
   ;
 }
 /*--------------------*/
@@ -1543,6 +1546,9 @@ textarea .form-control {
     width: 70%;
     padding: 7vh 0;
   }
+  #intro_intro {
+    left: 10vw;
+  }
 }
   
 @media(max-width:991px ){
@@ -1570,7 +1576,16 @@ textarea .form-control {
   .social {
     width: 70%;
   }
-
+  .intro {
+    background-image: url(img/intro/intro_mobile.png);
+    margin-top: 30%;
+    max-width: 100%;
+    width: 100%;
+    position: static;
+  }
+  #intro_intro {
+    left: 10vw;
+  }
 }
 
 @media(max-width:767px ){
@@ -1629,7 +1644,11 @@ textarea .form-control {
   }
 
   #intro_intro {
-    margin-top: 50%;
+    background-image: url(img/intro/intro_mobile.png);
+    margin-top: 30%;
+    max-width: 100%;
+    width: 100%;
+    position: static;
   }
 
   .social {
@@ -1697,7 +1716,11 @@ textarea .form-control {
   }
 
   #intro_intro {
-    margin-top: 50%;
+    background-image: url(img/intro/intro_mobile.png);
+    margin-top: 30%;
+    max-width: 100%;
+    width: 100%;
+    position: static;
   }
   .team_area {
     padding-top: 0;
@@ -1763,7 +1786,11 @@ textarea .form-control {
   }
 
   #intro_intro {
-    margin-top: 50%;
+    background-image: url(img/intro/intro_mobile.png);
+    margin-top: 30%;
+    max-width: 100%;
+    width: 100%;
+    position: static;
   }
   .team_area {
     padding-top: 0;
@@ -1815,7 +1842,11 @@ textarea .form-control {
     position: static;
   }
   #intro_intro {
-    margin-top: 50%;
+    background-image: url(img/intro/intro_mobile.png);
+    margin-top: 30%;
+    max-width: 100%;
+    width: 100%;
+    position: static;
   }
   .team_area {
     padding-top: 0;
