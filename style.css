@@ -455,7 +455,7 @@ img{
   width: 1000px;
   height: 1000px;
 
-  left: 90px;
+  left: 10vw;
   top: 47%;
 
   /* padding: 10px 20px; */
@@ -829,12 +829,13 @@ div[data-dimension] {
 	float: left;
 	display: inline;
 	width: 100%;
-	padding:80px 0px; 
+	padding:5vh 0px 30vh; 
 }
 .team_area{
 	float: left;
 	display: inline;
 	width: 100%;
+  padding-top: 10vh;
 }
 .team_slider{
 	float: left;
@@ -1247,11 +1248,12 @@ div[data-dimension] {
 /* CONTACT US SECTION */
 /*--------------------*/
 
+
 #contact{
 	background: none repeat scroll 0 0 #f8f8f8;
 	display: inline;
 	float: left;
-	padding: 80px 0px 0px;
+	padding: 5vh 0px 0px;
 	width: 100%;
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;	
