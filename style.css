@@ -84,74 +84,24 @@ img{
   background-color:#fff; /* change if the mask should have another color then white */
   z-index:99999; /* makes sure it stays on top */
 }
-
-#loading{
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-#loading img{
-    margin: 0;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    width: 10vmax;
-    height: auto;
-}
 #loading span{
     margin: 0;
-    position: absolute;
-    top: 60%;
-    left: 50%;
+    position: relative;
+    top: 50%;
+    left: 20%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    font-size: 10vmax;
-    color: #ffcc00;
+    font-size: 150px;
+    color: #999999;
 }
 
-#status_1 {
+#loading {
   width:200px;
   height:200px;
   position:absolute;
   left:50%; /* centers the loading animation horizontally one the screen */
   top:50%; /* centers the loading animation vertically one the screen */
-  background-image:url(../img/ajax-loader.gif); /* path to your loading animation */
-  background-repeat:no-repeat;
-  background-position:center;
-  margin:-100px 0 0 -100px; /* is width and height divided by two */
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-
-}
-#status_2 {
-  width:200px;
-  height:200px;
-  position:absolute;
-  left:50%; /* centers the loading animation horizontally one the screen */
-  top:50%; /* centers the loading animation vertically one the screen */
-  background-image:url(../img/ajax-loader.gif); /* path to your loading animation */
-  background-repeat:no-repeat;
-  background-position:center;
-  margin:-100px 0 0 -100px; /* is width and height divided by two */
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-
-}
-#status_3 {
-  width:200px;
-  height:200px;
-  position:absolute;
-  left:50%; /* centers the loading animation horizontally one the screen */
-  top:50%; /* centers the loading animation vertically one the screen */
-  background-image:url(img/ajax-loader.gif); /* path to your loading animation */
+  background-image:url(img/logo.png); /* path to your loading animation */
   background-repeat:no-repeat;
   background-position:center;
   margin:-100px 0 0 -100px; /* is width and height divided by two */
