@@ -88,23 +88,24 @@ img{
     margin: 0;
     position: relative;
     top: 50%;
-    left: 20%;
+    left: 23%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    font-size: 150px;
+    font-size: 100px;
     color: #999999;
 }
 
 #loading {
-  width:200px;
-  height:200px;
+  width:150px;
+  height:150px;
   position:absolute;
   left:50%; /* centers the loading animation horizontally one the screen */
   top:50%; /* centers the loading animation vertically one the screen */
   background-image:url(img/logo.png); /* path to your loading animation */
   background-repeat:no-repeat;
   background-position:center;
-  margin:-100px 0 0 -100px; /* is width and height divided by two */
+  background-size: contain;
+  margin:-75px 0 0 -75px; /* is width and height divided by two */
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
