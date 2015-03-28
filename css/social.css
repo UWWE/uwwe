@@ -1,12 +1,8 @@
-	@media screen and (device-width: 736px) and (device-height: 414px) and (-webkit-device-pixel-ratio: 3){
-	.social {
-		width: 70%;
-	}
-	}
 	.social {
 	  position: relative;
 	  margin: auto;
 	  text-align: center;
+
 	}
 
 	.social .link {
