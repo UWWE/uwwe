@@ -119,6 +119,7 @@ p{
 /*scrol to top*/
 
 .scrollToTop {
+  display: none;
   bottom: 20px;  
   font-size: 32px;
   font-weight: bold;

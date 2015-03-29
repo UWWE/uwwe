@@ -389,6 +389,7 @@ jQuery(function($){
 
 	  $(window).scroll(function(){
 	    if ($(this).scrollTop() > 300) {
+	      $('.scrollToTop').fadeIn();
 	      $('.scrollToTop').removeClass('reach-top');
 	    } else {
 	      $('.scrollToTop').addClass('reach-top');
