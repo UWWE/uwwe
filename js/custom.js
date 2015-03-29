@@ -388,10 +388,10 @@ jQuery(function($){
 	//Check to see if the window is top if not then display button
 
 	  $(window).scroll(function(){
-	    if ($(this).scrollTop() > 0) {
-	      $('.scrollToTop').addClass('reach-top');
-	    } else {
+	    if ($(this).scrollTop() > 300) {
 	      $('.scrollToTop').removeClass('reach-top');
+	    } else {
+	      $('.scrollToTop').addClass('reach-top');
 	    }
 	    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
 	        $('.scrollToTop').addClass('reach-bottom');

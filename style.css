@@ -130,11 +130,11 @@ p{
   width: 50px;
   z-index: 9999;
   color: #fff;  
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 
 }
 .scrollToTop:hover, .scrollToTop:focus{
@@ -145,7 +145,12 @@ p{
   bottom: 100px;
 }
 .reach-top{
-  display: none;
+  bottom: -50px;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 /*--------------------*/
