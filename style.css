@@ -119,8 +119,7 @@ p{
 /*scrol to top*/
 
 .scrollToTop {
-  bottom: 20px;
-  display: none;
+  bottom: 20px;  
   font-size: 32px;
   font-weight: bold;
   height: 50px;
@@ -141,6 +140,12 @@ p{
 .scrollToTop:hover, .scrollToTop:focus{
   text-decoration: none;
   outline: none;
+}
+.reach-bottom {
+  bottom: 100px;
+}
+.reach-top{
+  display: none;
 }
 
 /*--------------------*/
