@@ -555,7 +555,7 @@ p{
 }
 @media (max-width:767px) {
     .btn-download {
-        margin-top: 158% !important;
+        margin-top: 128% !important;
         margin-left: -3% !important;
     }
     .arrow-guide {
@@ -568,7 +568,7 @@ p{
 }
 @media (max-width: 384px) and (max-height: 640px) {
     .btn-download {
-        margin-top: 146% !important;
+        margin-top: 110% !important;
         margin-left: -3% !important;
     }
     .arrow-guide {
@@ -590,16 +590,16 @@ p{
         margin-left: -3% !important;
     }
     .arrow-guide {
-        margin-top: 20%;
+        margin-top: 10%;
     }
 }
 @media (max-width: 320px) and (max-height: 480px) {
     .btn-download {
-        margin-top: 108% !important;
+        margin-top: 78% !important;
         margin-left: -2% !important;
     }
     .arrow-guide {
-        margin-top: 15%;
+        margin-top: 7.5%;
     }
 }
 /*--------------------*/
