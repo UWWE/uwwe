@@ -529,12 +529,12 @@ p{
 }
 @media (max-width: 1024px) and (max-height: 768px) {
     .btn-download {
-        margin-top: 46% !important;
+        margin-top: 36% !important;
         margin-left: -2% !important;
     }
     .arrow-guide {
-        margin-top: 14%;
-        margin-left: -2.5%;
+        margin-top: 10%;
+        margin-left: -3%;
     }
     .arrow-down {
         height: 70px;
