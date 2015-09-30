@@ -113,7 +113,6 @@ p{
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-
 }
 
 .mobile-show {
@@ -257,15 +256,17 @@ p{
   color: #fff;
 }
 .navbar-right {
-    margin-right: -150px !important;
+  position: absolute;
+  right: 5%;
 }
 @media (max-width: 1024px) and (max-height: 768px) {
     .navbar-right {
-        margin-right: -26px !important;
+        /*margin-right: -26px !important;*/
     }
 }
 @media (max-width:768px) {
     .navbar-right {
+        position: relative;
         margin-right: 0px !important;
     }
 }
