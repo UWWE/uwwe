@@ -1034,7 +1034,7 @@ div[data-dimension] {
 	display: block;
 	width: 100%;
 }
-.team_img > div {
+.team_img > img {
   border-radius: 100%;
   height: 150px;
   margin: 0 auto 15px;
@@ -1076,32 +1076,8 @@ div[data-dimension] {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  margin: 0 1px;
 }
-
-/* profile sprite */
-.team_img > div  {
-    background-image: url(img/team/profile-sprite.png);
-    background-repeat: no-repeat;
-    background-size: 600px 600px;
-    display: block;
-}
-
-.profile-carl {background-position: 0 0; }
-.profile-chandler {background-position: -150px 0; }
-.profile-frank {background-position: -300px 0; }
-.profile-ivey {background-position: -450px 0; }
-.profile-kathy {background-position: 0 -150px; }
-.profile-kiki {background-position: -150px -150px; }
-.profile-lcd {background-position: -300px -150px; }
-.profile-marc {background-position: -450px -150px; }
-.profile-nicole {background-position: 0 -300px; }
-.profile-orchid {background-position: -150px -300px; }
-.profile-ouyang {background-position: -300px -300px; }
-.profile-peiran {background-position: -450px -300px; }
-.profile-sophie_gao {background-position: 0 -450px; }
-.profile-sophie_shi {background-position: -150px -450px; }
-.profile-sue {background-position: -300px -450px; }
-.profile-xuan {background-position: -450px -450px; }
 
 
 /*--------------------*/
