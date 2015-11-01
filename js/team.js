@@ -3,18 +3,6 @@ var team = [
         "name": "Carl Weng",
         "program": "Arts & Business",
         "description": "<p>一个把吃、玩和旅行当作人生主旋律的人</p>",
-        "email": "kyle_0420@hotmail.com",
-        "social": {
-            "envelope": "mailto:695709347xww@gmail.com",
-            "linkedin": "linkedin.ca",
-            "facebook": "https://www.facebook.com/carl.weng",
-            "instagram": "http://instagram.com/carl_tk",
-        }
-    },
-    {
-        "name": "Carl Weng",
-        "program": "Arts & Business",
-        "description": "<p>一个把吃、玩和旅行当作人生主旋律的人</p>",
         "social": {
             "facebook": "https://www.facebook.com/carl.weng",
             "instagram": "http://instagram.com/carl_tk",
@@ -43,10 +31,11 @@ var team = [
     {
         "name": "Sophie Shi",
         "program": "Computer Science",
-        "description": "<p>选错专业的文艺少女，</p><p>一直在减肥的吃货。</p>",
+        "description": "<p>敌视现实 虚构远方</p>",
         "social": {
             "instagram": "http://instagram.com/__sooophiie",
-            "linkedin": "https://ca.linkedin.com/pub/sophie-shi/9a/254/930/en"
+            "linkedin": "https://ca.linkedin.com/pub/sophie-shi/9a/254/930/en",
+            "facebook": "https://www.facebook.com/sophie.shi.31"
         }
     },
     {
@@ -63,14 +52,16 @@ var team = [
         "program": "CFM",
         "description": "<p>摄影是病，得治。祖传PS</p><p>包治百病。(T^T摄影除外)</p>",
         "social": {
-            "linkedin": "http://ca.linkedin.com/pub/susan-cao/9b/bb0/405/en"
+            "linkedin": "http://ca.linkedin.com/pub/susan-cao/9b/bb0/405/en",
+            "500px": "https://500px.com/susancao"
         }
     },
     {
         "name": "Nicole Xiao",
         "program": "Civil Eng.",
-        "description": "<p>好奇这大千世界</p><p>所有没有望过的的风景</p>",
+        "description": "<p>爱猫却偏偏过敏，</p><p>爱玩却偏学工程的奇女子</p>",
         "social": {
+            "facebook": "https://www.facebook.com/wenwen.xiao.161?fref=ts",
             "instagram": "http://instagram.com/nicole_x0418?ref=badge"
         }
     },
@@ -101,9 +92,9 @@ var team = [
         }
     },
     {
-        "name": "Ivey Ling",
+        "name": "Ivy Ling",
         "program": "Math",
-        "description": "<p>大一数学新生林益智，</p><p>打牌吃饭请算我一个 :)</p>",
+        "description": "<p>一直期待张悬出新歌的苏打绿粉</p>",
         "social": {
             "facebook": "https://www.facebook.com/ivy.ling.739?fref=ts",
             "instagram": "http://instagram.com/ivyrosykevin?ref=badge",
@@ -112,8 +103,8 @@ var team = [
     },
     {
         "name": "Ivy Ouyang",
-        "program": "Math",
-        "description": "<p>拖延症懒癌患者 深夜鸡汤党 只想做个小矮暖~ </p>",
+        "program": "Actuarial Science",
+        "description": "<p>体胖勤跑步 人丑多读书</p>",
         "social": {
             "instagram": "http://instagram.com/ivvvytcmh?ref=badge"
         }
@@ -123,7 +114,8 @@ var team = [
         "program": "AFM",
         "description": "<p>一吃一大碗</p><p>一睡一整天</p>",
         "social": {
-            "instagram": "http://instagram.com/kakazhenng?ref=badge"
+            "instagram": "http://instagram.com/kakazhenng?ref=badge",
+            "facebook": "https://www.facebook.com/kathy.zheng.75"
         }
     },
     {
@@ -133,6 +125,119 @@ var team = [
         "social": {
             "facebook": "https://www.facebook.com/orchid.ma.97?fref=ts",
             "instagram": "http://instagram.com/orchiiidda_aoe?ref=badge"
+        }
+    },
+    {
+        "name": "Cloris Tang",
+        "program": "Computer Science",
+        "description": "<p>诗酒趁年华</p>",
+        "social": {
+            "facebook": "https://www.facebook.com/cloris97"
+        }
+    },
+    {
+        "name": "Emily Jiang",
+        "program": "FARM/CFA",
+        "description": "<p>黄段子写手</p>",
+        "social": {
+            "envelope": "mailto:dongjiang@live.ca"
+        }
+    },
+    {
+        "name": "Fiona Wang",
+        "program": "Civil Eng.",
+        "description": "<p>人丑体胖只能学搬砖的女汉子= =</p>",
+        "social": {
+            "facebook": "https://www.facebook.com/profile.php?id=100006590940723&fref=ts"
+        }
+    },
+    {
+        "name": "Steven Feng",
+        "program": "FARM",
+        "description": "<p>= - =</p>",
+        "social": {
+            "envelope": "mailto:j53feng@uwaterloo.ca"
+        }
+    },
+    {
+        "name": "Bill Cao",
+        "program": "Computer Science",
+        "description": "<p>曾经停下来看松鼠差点迟到了课orz</p>",
+        "social": {
+            "facebook": "https://www.facebook.com/Zimincao",
+            "linkedin": "https://ca.linkedin.com/pub/zimin-cao/105/77b/8b0"
+        }
+    },
+    {
+        "name": "Catherine Zeng",
+        "program": "AFM",
+        "description": "<p>高冷担当。</p>",
+        "social": {
+            "envelope": "mailto:miaoxuan24@gmail.com"
+        }
+    },
+    {
+        "name": "Amy Sui",
+        "program": "Computer Eng.",
+        "description": "<p>爱就是在一起，</p><p>吃很多很多顿饭 :p</p>",
+        "social": {
+            "facebook": "https://www.facebook.com/yi.sui.399"
+        }
+    },
+    {
+        "name": "Yolanda Shi",
+        "program": "Math",
+        "description": "<p>肥媛</p>",
+        "social": {
+            "envelope": "shiyiyuan.eddie.pyy@gmail.com"
+        }
+    },
+    {
+        "name": "Claire Shi",
+        "program": "Math",
+        "description": "<p>爱音乐爱健身爱做饭</p>",
+        "social": {
+            "envelope": "shichang0421@gmail.com"
+        }
+    },
+    {
+        "name": "Jingyi Guo",
+        "program": "Civil Eng",
+        "description": "<p>除了学习啥都干</p>",
+        "social": {
+            "instagram": "http://instagram.com/avant_leo"
+        }
+    },
+    {
+        "name": "Hayden Lan",
+        "program": "Computer Science",
+        "description": "<p>爱喝酒爱音乐爱车</p></p>爱交朋友的学渣</p>",
+        "social": {
+            "instagram": "http://instagram.com/haydenlan93"
+        }
+    },
+    {
+        "name": "Linda He",
+        "program": "Computer Science",
+        "description": "<p>爱朋友爱音乐</p><p>爱狗狗爱卖萌</p>",
+        "social": {
+            "facebook": "https://www.facebook.com/yixuan.he.58"
+        }
+    },
+    {
+        "name": "Autumn Xu",
+        "program": "Math",
+        "description": "<p>数学系的文科生，</p><p>鹅大爷的好闺蜜。</p>",
+        "social": {
+            "facebook": "https://www.facebook.com/autumn.xu.52"
+        }
+    },
+    {
+        "name": "Kyle Zhao",
+        "program": "Computer Science",
+        "description": "<p>美剧狂人</p>",
+        "social": {
+            "facebook": "https://www.facebook.com/xrav3nz"
         }
     },
 

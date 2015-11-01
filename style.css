@@ -1058,6 +1058,9 @@ div[data-dimension] {
 .single_team p {
   line-height: 26px;
 }
+.single_team .description {
+  min-height: 56px;
+}
 .team_social{
 	float: left;
 	display: inline;

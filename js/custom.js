@@ -412,7 +412,7 @@ jQuery(function($){
 		$('body').delay(100).css({'overflow':'visible'});
 		// load team info
 		var team_list = "";
-		var team_info_template = "<div class=\"col-lg-3 col-md-3 col-sm-4\"> <div class=\"single_team wow fadeInUp\"> <div class=\"team_img\"> <img src=\"img/team/%s.jpg\"> </div> <h5>%s</h5> <span>%s</span> %s <div class=\"team_social\">%s</div> </div> </div>"
+		var team_info_template = "<div class=\"col-lg-3 col-md-3 col-sm-4\"> <div class=\"single_team wow fadeInUp\"> <div class=\"team_img\"> <img src=\"img/team/%s.jpg\"> </div> <h5>%s</h5> <span>%s</span> <div class=\"description\">%s</div> <div class=\"team_social\">%s</div> </div> </div>"
 		var social_template = "<a href=\"%s\" target=\"blank\"><i class=\"fa fa-%s\"></i></a>";
 		for (var i = 0; i < team.length; ++i) {
 			var social_list = "";
