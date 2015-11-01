@@ -31,7 +31,7 @@ var team = [
     {
         "name": "Sophie Shi",
         "program": "Computer Science",
-        "description": "<p>敌视现实 虚构远方</p>",
+        "description": "<p>敌视现实，</p><p>虚构远方。</p>",
         "social": {
             "instagram": "http://instagram.com/__sooophiie",
             "linkedin": "https://ca.linkedin.com/pub/sophie-shi/9a/254/930/en",
@@ -88,6 +88,7 @@ var team = [
         "description": "<p>我就是我 做最不一样的</p><p>水（cheng）果（zi）</p>",
         "social": {
             "facebook": "https://www.facebook.com/profile.php?id=100006857493231",
+            "wechat": "as574601359",
             "envelope": "mailto:yanyucheng007@hotmail.com"
         }
     },
@@ -98,15 +99,16 @@ var team = [
         "social": {
             "facebook": "https://www.facebook.com/ivy.ling.739?fref=ts",
             "instagram": "http://instagram.com/ivyrosykevin?ref=badge",
-            "weibo": "http://www.weibo.com/u/1262042992"
+            "wechat": "lzy591156784"
         }
     },
     {
         "name": "Ivy Ouyang",
         "program": "Actuarial Science",
-        "description": "<p>体胖勤跑步 人丑多读书</p>",
+        "description": "<p>体胖勤跑步，</p><p>人丑多读书。</p>",
         "social": {
-            "instagram": "http://instagram.com/ivvvytcmh?ref=badge"
+            "instagram": "http://instagram.com/ivvvytcmh?ref=badge",
+            "wechat": "OuyangMinghao923"
         }
     },
     {
@@ -115,7 +117,8 @@ var team = [
         "description": "<p>一吃一大碗</p><p>一睡一整天</p>",
         "social": {
             "instagram": "http://instagram.com/kakazhenng?ref=badge",
-            "facebook": "https://www.facebook.com/kathy.zheng.75"
+            "facebook": "https://www.facebook.com/kathy.zheng.75",
+            "wechat": "kathy052727"
         }
     },
     {
@@ -140,15 +143,17 @@ var team = [
         "program": "FARM/CFA",
         "description": "<p>黄段子写手</p>",
         "social": {
-            "envelope": "mailto:dongjiang@live.ca"
+            "envelope": "mailto:dongjiang@live.ca",
+            "wechat": "5196350218"
         }
     },
     {
         "name": "Fiona Wang",
         "program": "Civil Eng.",
-        "description": "<p>人丑体胖只能学搬砖的女汉子= =</p>",
+        "description": "<p>人丑体胖</p><p>只能学搬砖的女汉子= =</p>",
         "social": {
-            "facebook": "https://www.facebook.com/profile.php?id=100006590940723&fref=ts"
+            "facebook": "https://www.facebook.com/profile.php?id=100006590940723&fref=ts",
+            "wechat": "wangmingyue18"
         }
     },
     {
@@ -156,16 +161,18 @@ var team = [
         "program": "FARM",
         "description": "<p>= - =</p>",
         "social": {
-            "envelope": "mailto:j53feng@uwaterloo.ca"
+            "envelope": "mailto:j53feng@uwaterloo.ca",
+            "wechat": "sf970730"
         }
     },
     {
         "name": "Bill Cao",
         "program": "Computer Science",
-        "description": "<p>曾经停下来看松鼠差点迟到了课orz</p>",
+        "description": "<p>曾经停下来看松鼠</p><p>差点迟到了课orz</p>",
         "social": {
             "facebook": "https://www.facebook.com/Zimincao",
-            "linkedin": "https://ca.linkedin.com/pub/zimin-cao/105/77b/8b0"
+            "linkedin": "https://ca.linkedin.com/pub/zimin-cao/105/77b/8b0",
+            "wechat": "1665690190"
         }
     },
     {
@@ -173,7 +180,8 @@ var team = [
         "program": "AFM",
         "description": "<p>高冷担当。</p>",
         "social": {
-            "envelope": "mailto:miaoxuan24@gmail.com"
+            "envelope": "mailto:miaoxuan24@gmail.com",
+            "wechat": "1820462029"
         }
     },
     {
@@ -189,7 +197,8 @@ var team = [
         "program": "Math",
         "description": "<p>肥媛</p>",
         "social": {
-            "envelope": "shiyiyuan.eddie.pyy@gmail.com"
+            "envelope": "shiyiyuan.eddie.pyy@gmail.com",
+            "wechat": "aaaaafeiyuan"
         }
     },
     {
@@ -197,7 +206,8 @@ var team = [
         "program": "Math",
         "description": "<p>爱音乐爱健身爱做饭</p>",
         "social": {
-            "envelope": "shichang0421@gmail.com"
+            "envelope": "shichang0421@gmail.com",
+            "wechat": "shichang0421"
         }
     },
     {
@@ -205,15 +215,17 @@ var team = [
         "program": "Civil Eng",
         "description": "<p>除了学习啥都干</p>",
         "social": {
-            "instagram": "http://instagram.com/avant_leo"
+            "instagram": "http://instagram.com/avant_leo",
+            "wechat": "hypnos_akaneko"
         }
     },
     {
         "name": "Hayden Lan",
         "program": "Computer Science",
-        "description": "<p>爱喝酒爱音乐爱车</p></p>爱交朋友的学渣</p>",
+        "description": "<p>爱喝酒爱音乐爱车</p><p>爱交朋友的学渣</p>",
         "social": {
-            "instagram": "http://instagram.com/haydenlan93"
+            "instagram": "http://instagram.com/haydenlan93",
+            "wechat": "lanhaitian001"
         }
     },
     {
@@ -221,7 +233,8 @@ var team = [
         "program": "Computer Science",
         "description": "<p>爱朋友爱音乐</p><p>爱狗狗爱卖萌</p>",
         "social": {
-            "facebook": "https://www.facebook.com/yixuan.he.58"
+            "facebook": "https://www.facebook.com/yixuan.he.58",
+            "wechat": "hyx609381403"
         }
     },
     {
@@ -229,15 +242,17 @@ var team = [
         "program": "Math",
         "description": "<p>数学系的文科生，</p><p>鹅大爷的好闺蜜。</p>",
         "social": {
-            "facebook": "https://www.facebook.com/autumn.xu.52"
+            "facebook": "https://www.facebook.com/autumn.xu.52",
+            "wechat": "autumnxjingjing"
         }
     },
     {
         "name": "Kyle Zhao",
         "program": "Computer Science",
-        "description": "<p>美剧狂人</p>",
+        "description": "<p>GPA是什么？</p><p>能吃么？</p>",
         "social": {
-            "facebook": "https://www.facebook.com/xrav3nz"
+            "facebook": "https://www.facebook.com/xrav3nz",
+            "wechat": "hiimkyle"
         }
     },
 

@@ -414,10 +414,15 @@ jQuery(function($){
 		var team_list = "";
 		var team_info_template = "<div class=\"col-lg-3 col-md-3 col-sm-4\"> <div class=\"single_team wow fadeInUp\"> <div class=\"team_img\"> <img src=\"img/team/%s.jpg\"> </div> <h5>%s</h5> <span>%s</span> <div class=\"description\">%s</div> <div class=\"team_social\">%s</div> </div> </div>"
 		var social_template = "<a href=\"%s\" target=\"blank\"><i class=\"fa fa-%s\"></i></a>";
+		var social_wechat_template = "<a class=\"wechat-button\" data-toggle=\"tooltip\" title=\"复制粘贴 ID: %s 到微信加入好友\" data-trigger=\"click focus\"><i class=\"fa fa-wechat\"></i></a>";
 		for (var i = 0; i < team.length; ++i) {
 			var social_list = "";
 			Object.keys(team[i]['social']).forEach(function (site) {
-				social_list += sprintf(social_template, team[i]['social'][site], site);
+				if (site == "wechat") {
+					social_list += sprintf(social_wechat_template, team[i]['social'][site]);
+				} else {
+					social_list += sprintf(social_template, team[i]['social'][site], site);
+				}
 			});
 			team_list += sprintf(team_info_template,
 				team[i]["name"].replace(/ /g,'').toLowerCase(),
@@ -449,6 +454,8 @@ jQuery(function($){
 				}
 			]
 		});
+		// initialize tooltip
+		$('[data-toggle="tooltip"]').tooltip()
 	})
 
 
@@ -528,9 +535,7 @@ jQuery(function($){
 	/* ----------------------------------------------------------- */
 	/*  16. Wechat tooltip
 	/* ----------------------------------------------------------- */
-	$(function () {
-	  $('[data-toggle="tooltip"]').tooltip()
-	})
+	// moved to preloader section
 
 	// $('#landing_content').hammer().on('swipeup', function() {
 	// 	$(window).scrollTo(document.getElementById("activities"), 800);
