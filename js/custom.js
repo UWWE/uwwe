@@ -54,18 +54,17 @@ jQuery(function($){
 	/* ----------------------------------------------------------- */
 
 	// For fixed top bar
-       $(window).scroll(function(){
-        if($(window).scrollTop() >100 /*or $(window).height()*/){
-            $(".navbar-fixed-top").addClass('past-main');
-            $(".navbar-brand").addClass('past-main2');
-            $(".navbar-brand-child").addClass('past-main2-child');
-        }
-    else{
-      $(".navbar-fixed-top").removeClass('past-main');
-      $(".navbar-brand").removeClass('past-main2');
-      $(".navbar-brand-child").removeClass('past-main2-child');
-      }
-    });
+	$(window).scroll(function(){
+		if ($(window).scrollTop() >100 /*or $(window).height()*/) {
+			$(".navbar-fixed-top").addClass('past-main');
+			$(".navbar-brand").addClass('past-main2');
+			$(".navbar-brand-child").addClass('past-main2-child');
+		} else {
+			$(".navbar-fixed-top").removeClass('past-main');
+			$(".navbar-brand").removeClass('past-main2');
+			$(".navbar-brand-child").removeClass('past-main2-child');
+		}
+	});
 
 
 	/* ----------------------------------------------------------- */
@@ -516,9 +515,10 @@ jQuery(function($){
 	/*  15. MOBILE MENU ACTIVE CLOSE
 	/* ----------------------------------------------------------- */
 
-	$('.navbar-nav').on('click', 'li a', function() {
-	  $('.navbar-collapse').collapse('hide');
-	});
+	// TODO: invertigate why the following code causes the nav bar to jump around
+	// $('.navbar-nav').on('click', 'li a', function() {
+	//   $('.navbar-collapse').collapse('hide');
+	// });
 
 
 	/* ----------------------------------------------------------- */
