@@ -247,6 +247,15 @@ var team = [
         }
     },
     {
+        "name": "Daisy Yu",
+        "program": "Arts",
+        "description": "<p>爱猫，爱狗，爱文艺的大龄单身女青年。</p>",
+        "social": {
+            "envelope": "mailto:daisyh1023@yahoo.com",
+            "wechat": "1196090716"
+        }
+    },
+    {
         "name": "Kyle Zhao",
         "program": "Computer Science",
         "description": "<p>GPA是什么？</p><p>能吃么？</p>",
@@ -254,6 +263,6 @@ var team = [
             "facebook": "https://www.facebook.com/xrav3nz",
             "wechat": "hiimkyle"
         }
-    },
+    }
 
 ];
