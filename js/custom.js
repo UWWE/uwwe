@@ -404,57 +404,10 @@ jQuery(function($){
 	}
 	ellipsis.start();
 
-
 	jQuery(window).load(function() { // makes sure the whole site is loaded
 		ellipsis.stop();
 		$('#preloader').delay(100).fadeOut('slow'); // will fade out the white DIV that covers the website.
 		$('body').delay(100).css({'overflow':'visible'});
-		// load team info
-		var team_list = "";
-		var team_info_template = "<div class=\"col-lg-3 col-md-3 col-sm-4\"> <div class=\"single_team wow fadeInUp\"> <div class=\"team_img\"> <img src=\"img/team/%s.jpg\"> </div> <h5>%s</h5> <span>%s</span> <div class=\"description\">%s</div> <div class=\"team_social\">%s</div> </div> </div>"
-		var social_template = "<a href=\"%s\" target=\"blank\"><i class=\"fa fa-%s\"></i></a>";
-		var social_wechat_template = "<a class=\"wechat-button\" data-toggle=\"tooltip\" title=\"复制粘贴 ID: %s 到微信加入好友\" data-trigger=\"click focus\"><i class=\"fa fa-wechat\"></i></a>";
-		for (var i = 0; i < team.length; ++i) {
-			var social_list = "";
-			Object.keys(team[i]['social']).forEach(function (site) {
-				if (site == "wechat") {
-					social_list += sprintf(social_wechat_template, team[i]['social'][site]);
-				} else {
-					social_list += sprintf(social_template, team[i]['social'][site], site);
-				}
-			});
-			team_list += sprintf(team_info_template,
-				team[i]["name"].replace(/ /g,'').toLowerCase(),
-				team[i]["name"],
-				team[i]["program"],
-				team[i]["description"],
-				social_list);
-		}
-		$("#load_team").append(team_list);
-		// initialize the team slider
-		$('.team_slider').slick({
-			dots: false,
-			infinite: true,
-			speed: 300,
-			slidesToShow: 4,
-			slidesToScroll: 4,
-			responsive: [
-				{
-					breakpoint: 1024,
-					settings: {slidesToShow: 3, slidesToScroll: 3, infinite: true, dots: true }
-				},
-				{
-					breakpoint: 600,
-					settings: {slidesToShow: 2, slidesToScroll: 2 }
-				},
-				{
-					breakpoint: 480,
-					settings: {slidesToShow: 1, slidesToScroll: 1 }
-				}
-			]
-		});
-		// initialize tooltip
-		$('[data-toggle="tooltip"]').tooltip()
 	})
 
 
