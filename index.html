@@ -51,7 +51,6 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -237,10 +236,14 @@
                         <div class="heading">
                             <h2 class="wow fadeInLeftBig">团队</h2>
                         </div>
-                        <div id="team-filter">
-                            <ul>
-                                <li><a href="#">全部</a></li>
-                                <li><a href="#exec">Exec</a></li>
+                        <div id="team-filter" class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="filter-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
+                                全部
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="filter-dropdown">
+                                <li class="active"><a href="#">全部</a></li>
+                                <li><a href="#exec">EXEC</a></li>
                                 <li><a href="#design">设计部</a></li>
                                 <li><a href="#editorial">编辑部</a></li>
                                 <li><a href="#pr">外联部</a></li>

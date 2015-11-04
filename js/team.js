@@ -16,7 +16,7 @@ jQuery(function($){
                 "name": "Peiran Wang",
                 "program": "Computer Science",
                 "description": "<p>没什么特点, </p><p>普通人。</p>",
-                "department": "exec editorial",
+                "department": "editorial",
                 "social": {
                     "envelope": "mailto:contactus@uwwe.ca",
                     "linkedin": "https://linkedin.com/in/peiran"
@@ -48,7 +48,7 @@ jQuery(function($){
                 "name": "Richard Li",
                 "program": "Computer Science",
                 "description": "<p>我叫LCD，平时喜欢</p><p>拍拍照，扯扯淡，打打球。</p>",
-                "department": "exec pr",
+                "department": "pr",
                 "social": {
                     "facebook": "https://www.facebook.com/profile.php?id=100006362884353&fref=ts",
                     "linkedin": "https://ca.linkedin.com/pub/richard-li/90/b11/179/en"
@@ -68,7 +68,7 @@ jQuery(function($){
                 "name": "Nicole Xiao",
                 "program": "Civil Eng.",
                 "description": "<p>爱猫却偏偏过敏，</p><p>爱玩却偏学工程的奇女子</p>",
-                "department": "exec event",
+                "department": "event",
                 "social": {
                     "facebook": "https://www.facebook.com/wenwen.xiao.161?fref=ts",
                     "instagram": "http://instagram.com/nicole_x0418?ref=badge"
@@ -119,7 +119,7 @@ jQuery(function($){
                 "name": "Ivy Ouyang",
                 "program": "Actuarial Science",
                 "description": "<p>体胖勤跑步，</p><p>人丑多读书。</p>",
-                "department": "event",
+                "department": "event exec",
                 "social": {
                     "instagram": "http://instagram.com/ivvvytcmh?ref=badge",
                     "wechat": "OuyangMinghao923"
@@ -129,7 +129,7 @@ jQuery(function($){
                 "name": "Kathy Zheng",
                 "program": "AFM",
                 "description": "<p>一吃一大碗</p><p>一睡一整天</p>",
-                "department": "pr",
+                "department": "pr exec",
                 "social": {
                     "instagram": "http://instagram.com/kakazhenng?ref=badge",
                     "facebook": "https://www.facebook.com/kathy.zheng.75",
@@ -353,12 +353,22 @@ jQuery(function($){
 
     var team_filters = $("#team-filter").find("a");
     team_filters.click(function (e) {
-        var selection = $(this).attr("href");
-        if (selection == "#") {
-            $('.team_slider').slick('slickUnfilter');
-        } else {
-            $('.team_slider').slick('slickFilter',"[data-department~='" + selection.substring(1) + "']");
-        }
         e.preventDefault();
+        if ($(this).parent().hasClass("active")) {
+            return;
+        }
+        team_filters.parent().removeClass("active");
+        $(this).parent().addClass("active");
+        var selection = $(this).attr("href").substring(1);
+        $("#filter-dropdown").html($(this).text() + '<span class="caret"></span>');
+        $('.team_slider').slick('slickUnfilter');
+        if (selection) {
+            $('.team_slider').slick('slickFilter',"[data-department~='" + selection + "']");
+        }
     });
+
+    $('.team_slider').on('setPosition', function(slick) {
+        $("#filter-dropdown").width(slick.currentTarget.clientWidth - 56);
+    });
+
 });

@@ -1010,7 +1010,7 @@ div[data-dimension] {
 	float: left;
 	display: inline;
 	width: 100%;
-  padding-top: 10vh;
+  padding-top: 8vh;
 }
 .team_slider{
 	float: left;
@@ -1081,6 +1081,73 @@ div[data-dimension] {
   transition: all 0.5s;
   margin: 0 1px;
 }
+
+.slick-prev, .slick-next {
+  z-index: 999;
+}
+@media (min-width: 768px) {
+  #team-filter ul {
+    text-align: center;
+  }
+
+  #team-filter ul li {
+    display: inline-block;
+    width: 10%;
+    margin: 0 10px;
+  }
+
+  #team-filter ul li a {
+    color: #000000;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+  }
+
+  #team-filter ul li a:hover,
+  #team-filter ul li.active a {
+    color: #ffcc00;
+    background: 0;
+  }
+
+
+  .dropdown-menu {
+    margin-top: 3vh;
+    width: 100%;
+    display: block;
+    position: relative;
+    border: none;
+    box-shadow: none;
+  }
+
+  #filter-dropdown {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #filter-dropdown {
+    position: relative;
+    margin-left: 15px;
+  }
+  #filter-dropdown span {
+    position: absolute;
+    right: 5%;
+    top: 13px;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
+
+  #team-filter {
+    padding-top: 0;
+    padding-bottom: 2vh;
+  }
+}
+
 
 /*--------------------*/
 /* PRICING SECTION */
