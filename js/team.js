@@ -352,6 +352,7 @@ jQuery(function($){
     });
 
     var team_filters = $("#team-filter").find("a");
+
     team_filters.click(function (e) {
         e.preventDefault();
         if ($(this).parent().hasClass("active")) {
@@ -360,11 +361,16 @@ jQuery(function($){
         team_filters.parent().removeClass("active");
         $(this).parent().addClass("active");
         var selection = $(this).attr("href").substring(1);
-        $("#filter-dropdown").html($(this).text() + '<span class="caret"></span>');
-        $('.team_slider').slick('slickUnfilter');
-        if (selection) {
-            $('.team_slider').slick('slickFilter',"[data-department~='" + selection + "']");
-        }
+        $("#filter-dropdown span:first-child").html($(this).text());
+        $('.team_slider').animate({ opacity: "0" }, 500);
+        setTimeout(function() {
+            $('.team_slider').slick('slickUnfilter');
+            if (selection) {
+                $('.team_slider').slick('slickFilter', 'div[data-department~="' + selection + '"]');
+            }
+        }, 500);
+        $('.team_slider').animate({ opacity: "1" }, 500 );
+
     });
 
     $('.team_slider').on('setPosition', function(slick) {

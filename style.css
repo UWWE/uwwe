@@ -1085,6 +1085,7 @@ div[data-dimension] {
 .slick-prev, .slick-next {
   z-index: 999;
 }
+
 @media (min-width: 768px) {
   #team-filter ul {
     text-align: center;
@@ -1132,7 +1133,7 @@ div[data-dimension] {
     position: relative;
     margin-left: 15px;
   }
-  #filter-dropdown span {
+  #filter-dropdown span.caret {
     position: absolute;
     right: 5%;
     top: 13px;
