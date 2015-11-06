@@ -351,10 +351,13 @@ jQuery(function($){
         team.load();
     });
 
-    var team_filters = $("#team-filter").find("a");
+    var team_filters = $("#team-filter").find("a"),
+        is_filtering = false;
 
-    team_filters.click(function (e) {
+    team_filters.on("click", function (e) {
         e.preventDefault();
+        if (is_filtering) return ;
+        is_filtering = true;
         if ($(this).parent().hasClass("active")) {
             return;
         }
@@ -362,15 +365,18 @@ jQuery(function($){
         $(this).parent().addClass("active");
         var selection = $(this).attr("href").substring(1);
         $("#filter-dropdown span:first-child").html($(this).text());
-        $('.team_slider').animate({ opacity: "0" }, 500);
-        setTimeout(function() {
+        $('.team_slider').animate({
+            opacity: "0"
+        }, 500, function() {
             $('.team_slider').slick('slickUnfilter');
             if (selection) {
                 $('.team_slider').slick('slickFilter', 'div[data-department~="' + selection + '"]');
             }
-        }, 500);
-        $('.team_slider').animate({ opacity: "1" }, 500 );
-
+        }).animate({
+            opacity: "1"
+        }, 500, function() {
+            is_filtering = false;
+        });
     });
 
     $('.team_slider').on('setPosition', function(slick) {

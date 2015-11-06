@@ -1106,9 +1106,11 @@ div[data-dimension] {
     -webkit-transition: all 0.25s;
     -o-transition: all 0.25s;
     transition: all 0.25s;
+    background: 0;
   }
 
   #team-filter ul li a:hover,
+  #team-filter ul li a:active,
   #team-filter ul li.active a {
     color: #ffcc00;
     background: 0;
