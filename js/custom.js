@@ -419,7 +419,7 @@ jQuery(function($){
 
 	// Cache selectors
 	var lastId,
-	topMenu = $("#top-menu"),
+	topMenu = $(".navbar-fixed-top"),
 	topMenuHeight = topMenu.outerHeight()+13,
 	// All list items
 	menuItems = topMenu.find("a"),
