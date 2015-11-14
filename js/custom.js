@@ -420,7 +420,7 @@ jQuery(function($){
 	// Cache selectors
 	var lastId,
 	topMenu = $(".navbar-fixed-top"),
-	topMenuHeight = topMenu.outerHeight()+13,
+	topMenuHeight = topMenu.height() + 13,
 	// All list items
 	menuItems = topMenu.find("a"),
 	// Anchors corresponding to menu items
@@ -433,7 +433,7 @@ jQuery(function($){
 	// so we can get a fancy scroll animation
 	menuItems.click(function(e){
 	  var href = $(this).attr("href"),
-	      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+	      offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight;
 	  $('html, body').stop().animate({
 	      scrollTop: offsetTop
 	  }, 900);
@@ -447,7 +447,7 @@ jQuery(function($){
 
 	   // Get id of current scroll item
 	   var cur = scrollItems.map(function(){
-	     if ($(this).offset().top < fromTop)
+	     if ($(this).offset().top <= fromTop)
 	       return this;
 	   });
 	   // Get the id of the current element

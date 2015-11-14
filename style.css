@@ -255,13 +255,13 @@ p{
   background-color: transparent;
   color: #fff;
 }
-.navbar-right {
+/*.navbar-right {
   position: absolute;
   right: 5%;
 }
 @media (max-width: 1024px) and (max-height: 768px) {
     .navbar-right {
-        /*margin-right: -26px !important;*/
+        margin-right: -26px !important;
     }
 }
 @media (max-width:768px) {
@@ -269,7 +269,7 @@ p{
         position: relative;
         margin-right: 0px !important;
     }
-}
+}*/
 /*--------/menu_area-------- */
 
 .slider_area{
