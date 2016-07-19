@@ -507,15 +507,15 @@ p{
 }
 .btn-download {
     color: #fff;
-    background-color: #27245D;
-    border-color: #27245D;
+    background-color: #6494ce;
+    border-color: #fff;
     margin-top: 40% !important;
     margin-left: -1%;
 }
 .btn-download:hover, .btn-download:focus, .btn-download.focus, .btn-download:active, .btn-download.active, .btn-download:toggle {
     color: #fff;
-    background-color: #27245D;
-    border-color: #27245D;
+    background-color: #6494ce;
+    border-color: #fff;
 }
 .btn:hover, .btn:focus, .btn.focus {
     color: #fff !important;
