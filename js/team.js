@@ -301,7 +301,8 @@ jQuery(function($){
         "social": "<a href=\"%s\" target=\"blank\"><i class=\"fa fa-%s\"></i></a>",
         "wechat": "<a class=\"wechat-button\" data-toggle=\"tooltip\" title=\"复制粘贴 ID: %s 到微信加入好友\" data-trigger=\"click focus\"><i class=\"fa fa-wechat\"></i></a>",
         "prepare": function () {
-            for (member of this.list) {
+            var self = this;
+            this.list.map(function(member) {
                 var social_list = "";
                 Object.keys(member.social).forEach(function (site) {
                     if (site == "wechat") {
@@ -310,14 +311,14 @@ jQuery(function($){
                         social_list += sprintf(team.social, member.social[site], site);
                     }
                 });
-                this.html += sprintf(this.template,
+                self.html += sprintf(self.template,
                     member["department"],
                     member["name"].replace(/ /g,'').toLowerCase(),
                     member["name"],
                     member["program"],
                     member["description"],
                     social_list);
-            }
+            });
         },
         "load": function () {
             $("#load_team").append(this.html);
