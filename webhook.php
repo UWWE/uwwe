@@ -34,8 +34,8 @@ if (!empty($_POST['payload'])) {
     if ($branch == "production") {
 
         $cmd = "git reset --hard && git checkout production && git pull origin production && ./minify.sh";
-        $result = syscall($cmd, $cwd);
 
+        $result = syscall($cmd, $cwd);
         $output = '';
 
         foreach ($payload->commits as $commit) {
