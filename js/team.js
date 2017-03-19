@@ -2,27 +2,6 @@ jQuery(function($){
     var team = {
         "list": [
             {
-                "name": "Carl Weng",
-                "program": "Arts & Business",
-                "description": "<p>一个把吃、玩和旅行当作人生主旋律的人</p>",
-                "department": "exec",
-                "social": {
-                    "facebook": "https://www.facebook.com/carl.weng",
-                    "instagram": "http://instagram.com/carl_tk",
-                    "linkedin": "https://ca.linkedin.com/in/carlweng/en"
-                }
-            },
-            {
-                "name": "Peiran Wang",
-                "program": "Computer Science",
-                "description": "<p>没什么特点, </p><p>普通人。</p>",
-                "department": "editorial",
-                "social": {
-                    "envelope": "mailto:contactus@uwwe.ca",
-                    "linkedin": "https://linkedin.com/in/peiran"
-                }
-            },
-            {
                 "name": "Marc Lo",
                 "program": "Computer Eng.",
                 "description": "<p>英雄莫問出處，學渣莫問成績，拍視頻棄成績就是我。</p>",
@@ -65,16 +44,6 @@ jQuery(function($){
                 }
             },
             {
-                "name": "Nicole Xiao",
-                "program": "Civil Eng.",
-                "description": "<p>爱猫却偏偏过敏，</p><p>爱玩却偏学工程的奇女子</p>",
-                "department": "event",
-                "social": {
-                    "facebook": "https://www.facebook.com/wenwen.xiao.161?fref=ts",
-                    "instagram": "http://instagram.com/nicole_x0418?ref=badge"
-                }
-            },
-            {
                 "name": "Sophie Gao",
                 "program": "Computer Science",
                 "description": "<p>不做蝼蚁，不做神，</p><p>做个默默吃东西的人。</p>",
@@ -82,15 +51,6 @@ jQuery(function($){
                 "social": {
                     "instagram": "http://instagram.com/sophiemjj_?ref=badge",
                     "linkedin": "http://www.linkedin.com/profile/view?id=107544866"
-                }
-            },
-            {
-                "name": "Frank Zeng",
-                "program": "Computer Science",
-                "description": "<p>安美男 游戏控 飞机迷</p><p>做海报就用Frank Style!</p>",
-                "department": "design",
-                "social": {
-                    "envelope": "mailto:zjyfrank17@gmail.com"
                 }
             },
             {
@@ -116,16 +76,6 @@ jQuery(function($){
                 }
             },
             {
-                "name": "Ivy Ouyang",
-                "program": "Actuarial Science",
-                "description": "<p>体胖勤跑步，</p><p>人丑多读书。</p>",
-                "department": "event exec",
-                "social": {
-                    "instagram": "http://instagram.com/ivvvytcmh?ref=badge",
-                    "wechat": "OuyangMinghao923"
-                }
-            },
-            {
                 "name": "Kathy Zheng",
                 "program": "AFM",
                 "description": "<p>一吃一大碗</p><p>一睡一整天</p>",
@@ -144,15 +94,6 @@ jQuery(function($){
                 "social": {
                     "facebook": "https://www.facebook.com/orchid.ma.97?fref=ts",
                     "instagram": "http://instagram.com/orchiiidda_aoe?ref=badge"
-                }
-            },
-            {
-                "name": "Cloris Tang",
-                "program": "Computer Science",
-                "description": "<p>诗酒趁年华</p>",
-                "department": "design",
-                "social": {
-                    "facebook": "https://www.facebook.com/cloris97"
                 }
             },
             {
@@ -176,53 +117,12 @@ jQuery(function($){
                 }
             },
             {
-                "name": "Steven Feng",
-                "program": "FARM",
-                "description": "<p>= - =</p>",
-                "department": "pr",
-                "social": {
-                    "envelope": "mailto:j53feng@uwaterloo.ca",
-                    "wechat": "sf970730"
-                }
-            },
-            {
-                "name": "Bill Cao",
-                "program": "Computer Science",
-                "description": "<p>曾经停下来看松鼠</p><p>差点迟到了课orz</p>",
-                "department": "tech",
-                "social": {
-                    "facebook": "https://www.facebook.com/Zimincao",
-                    "linkedin": "https://ca.linkedin.com/pub/zimin-cao/105/77b/8b0",
-                    "wechat": "1665690190"
-                }
-            },
-            {
-                "name": "Catherine Zeng",
-                "program": "AFM",
-                "description": "<p>高冷担当。</p>",
-                "department": "pr",
-                "social": {
-                    "envelope": "mailto:miaoxuan24@gmail.com",
-                    "wechat": "1820462029"
-                }
-            },
-            {
                 "name": "Amy Sui",
                 "program": "Computer Eng.",
                 "description": "<p>爱就是在一起，</p><p>吃很多很多顿饭 :p</p>",
                 "department": "editorial",
                 "social": {
                     "facebook": "https://www.facebook.com/yi.sui.399"
-                }
-            },
-            {
-                "name": "Yolanda Shi",
-                "program": "Math",
-                "description": "<p>肥媛</p>",
-                "department": "event",
-                "social": {
-                    "envelope": "shiyiyuan.eddie.pyy@gmail.com",
-                    "wechat": "aaaaafeiyuan"
                 }
             },
             {
@@ -243,16 +143,6 @@ jQuery(function($){
                 "social": {
                     "instagram": "http://instagram.com/avant_leo",
                     "wechat": "hypnos_akaneko"
-                }
-            },
-            {
-                "name": "Hayden Lan",
-                "program": "Computer Science",
-                "description": "<p>爱喝酒爱音乐爱车</p><p>爱交朋友的学渣</p>",
-                "department": "event",
-                "social": {
-                    "instagram": "http://instagram.com/haydenlan93",
-                    "wechat": "lanhaitian001"
                 }
             },
             {
