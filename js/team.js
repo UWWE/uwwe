@@ -184,7 +184,189 @@ jQuery(function($){
                     "facebook": "https://www.facebook.com/xrav3nz",
                     "wechat": "hiimkyle"
                 }
+            },
+            {
+                "name": "Jason Ruan",
+                "program": "FARM",
+                "description": "<p>每个故事里都会有的那个乐于助人且运气不错的小胖</p>",
+                "department": "event",
+                "social": {
+                    "envelope": "jasonrzy2013@gmail.com",
+                    "wechat": "LR_JLC"
+                }
+            },
+            {
+                "name": "Wendy Lin",
+                "program": "Actuarial Science",
+                "description": "<p>笑点诡异的吃货 (￣.￣)</p>",
+                "department": "event",
+                "social": {
+                    "envelope": "wandi0118@gmail.com",
+                    "wechat": "wandi0118",
+                    "facebook": "https://www.facebook.com/wandi.lin1"
+                }
+            },
+            {
+                "name": "Michael Chi",
+                "program": "Computer Eng",
+                "description": "<p>喜欢一切跟吃有关的东西</p>",
+                "department": "tech",
+                "social": {
+                    "envelope": "michael.chi1997@gmail.com",
+                    "wechat": "michael1997725",
+                    "facebook": "https://www.facebook.com/michael.chi.9"
+                }
+            },
+            {
+                "name": "Joanna Zhou",
+                "program": "Computer Science",
+                "description": "<p>爱笑的女生运气不会差 爱傻笑的女生糊里糊涂地被耍</p>",
+                "department": "tech",
+                "social": {
+                    "envelope": "joanna.chow.jc.jc@gmail.com",
+                    "wechat": "Joanna_chow_",
+                    "instagram": "gaaayee",
+                    "facebook": "https://www.facebook.com/joanna.chow.jc.jc"
+                }
+            },
+            // {
+            //     "name": "Tim Zhong",
+            //     "program": "Computer Science",
+            //     "description": "",
+            //     "department": "tech",
+            //     "social": {
+            //     }
+            // },
+            {
+                "name": "Spencer Tao",
+                "program": "Economics",
+                "description": "<p>Try to be an Explorer.</p>",
+                "department": "event",
+                "social": {
+                    "envelope": "spencerts@outlook.com",
+                    "wechat": "speocean",
+                    "instagram": "speocean"
+                }
+            },
+            // {
+            //     "name": "Agnes",
+            //     "program": "",
+            //     "description": "",
+            //     "department": "editorial",
+            //     "social": {
+            //     }
+            // },
+            {
+                "name": "Sandy Xu",
+                "program": "AFM",
+                "description": "<p>做喜欢做的事儿~</p>",
+                "department": "design",
+                "social": {
+                    "envelope": "sandyxu0927@gmail.com",
+                    "wechat": "onenonly0927",
+                    "facebook": "https://www.facebook.com/sandy0927"
+                }
+            },
+            {
+                "name": "Sylvia Zhang",
+                "program": "AFM",
+                "description": "<p>虽然一把年纪了，但还是很想成为被选召的孩子啊</p>",
+                "department": "design",
+                "social": {
+                    "event": "zzhangshuyan@gmail.com",
+                    "wechat": "sylviaokita"
+                }
+            },
+            {
+                "name": "Nicole Sheng",
+                "program": "Actuarial Science",
+                "description": "<p>一個心有文科的理科生</p>",
+                "department": "editorial",
+                "social": {
+                    "envelope": "nicoleshengsal@gmail.com",
+                    "wechat": "372233161",
+                    "instagram": "ithought_nicolllle",
+                    "facebook": "https://www.facebook.com/nicole.sheng.5"
+                }
+            },
+            {
+                "name": "Jonathan Wang",
+                "program": "Computer Science",
+                "description": "<p>猜猜我是谁</p>",
+                "department": "editorial",
+                "social": {
+                    "envelope": "jonwzh@gmail.com",
+                    "wechat": "jonathanwzh"
+                }
+            },
+            {
+                "name": "Ryan Han",
+                "program": "Computer Science",
+                "description": "<p>I have a UW, I have a WE Ugh! UWWE.</p>",
+                "department": "editorial",
+                "social": {
+                    "envelope": "ryanhan.ca@outlook.com",
+                    "wechat": "ryan_hannn",
+                    "facebook": "https://www.facebook.com/ryan.xj.han",
+                    "linkedin": "https://www.linkedin.com/in/uwryan",
+                    "desktop": "https://ryanhan.me/"
+                }
+            },
+            // {
+            //     "name": "Winston",
+            //     "program": "event",
+            //     "description": "<p></p>",
+            //     "department": "event",
+            //     "social": {
+            //     }
+            // },
+            // {
+            //     "name": "Myracle",
+            //     "program": "event",
+            //     "description": "<p></p>",
+            //     "department": "event",
+            //     "social": {
+            //     }
+            // },
+            // {
+            //     "name": "Sherry?",
+            //     "program": "event",
+            //     "description": "<p></p>",
+            //     "department": "event",
+            //     "social": {
+            //     }
+            // },
+            // {
+            //     "name": "Kevin Diao",
+            //     "program": "event",
+            //     "description": "<p></p>",
+            //     "department": "event",
+            //     "social": {
+            //     }
+            // },
+            {
+                "name": "Cici Wu",
+                "program": "GBDA",
+                "description": "<p>标准吃货一枚</p>",
+                "department": "editorial",
+                "social": {
+                    "envelope": "cicimengxiw847@gmail.com",
+                    "wechat": "wumengxi980817",
+                    "instagram": "ciciwumengxi"
+                }
+            },
+            {
+                "name": "Ariel Ji",
+                "program": "Computer Science",
+                "description": "<p>喝最烈的酒</p> <p>做最野的汪</p>",
+                "department": "editorial",
+                "social": {
+                    "envelope": "ariel.jsy@gmail.com",
+                    "wechat": "16479889796",
+                    "instagram": "stupidariel"
+                }
             }
+
         ],
         "html": "",
         "template": "<div class=\"col-lg-3 col-md-3 col-sm-4\" data-department=\"%s\"> <div class=\"single_team wow fadeInUp\"> <div class=\"team_img\"> <img src=\"img/team/%s.jpg\"> </div> <h5>%s</h5> <span>%s</span> <div class=\"description\">%s</div> <div class=\"team_social\">%s</div> </div> </div>",
