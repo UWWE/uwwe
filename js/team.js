@@ -369,7 +369,7 @@ jQuery(function($){
 
         ],
         "html": "",
-        "template": "<div class=\"col-lg-3 col-md-3 col-sm-4\" data-department=\"%s\"> <div class=\"single_team wow fadeInUp\"> <div class=\"team_img\"> <img src=\"img/team/%s.jpg\"> </div> <h5>%s</h5> <span>%s</span> <div class=\"description\">%s</div> <div class=\"team_social\">%s</div> </div> </div>",
+        "template": "<div class=\"col-lg-3 col-md-3 col-sm-4\" data-department=\"%s\"> <div class=\"single_team wow fadeInUp\"> <div class=\"team_img\"> <img src=\"img/team/%s.jpg\" onerror=\"this.src='img/team/placeholder-user-photo.png';\"> </div> <h5>%s</h5> <span>%s</span> <div class=\"description\">%s</div> <div class=\"team_social\">%s</div> </div> </div>",
         "social": "<a href=\"%s\" target=\"blank\"><i class=\"fa fa-%s\"></i></a>",
         "wechat": "<a class=\"wechat-button\" data-toggle=\"tooltip\" title=\"复制粘贴 ID: %s 到微信加入好友\" data-trigger=\"click focus\"><i class=\"fa fa-wechat\"></i></a>",
         "prepare": function () {
