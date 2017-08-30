@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - node
+install: npm install html-minifier cssnano-cli uglify-js -g
+script: scripts/minify.sh
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GH_TOKEN # Set in travis-ci.org dashboard
+  on:
+    branch: master
+env:
+  global:
+    secure: htzWVAoOU1dnexNRcy0bTUwGBnAN8MtPfuAJ1Nmz/Tn/dhwERlo9FLceNLuHwbme/w04N1rUctS3ciAb3Pb9tXWYVVu2z8sHrHLeqP2L2c5kbJP5K0cfrkJH4Hx0b+IajNz1usKHhyx3F/17Iw927fOVMT6YkjhhoM8Kd0+vB980roQ+MZr2yBCErTsHdMSL66DgbwmCCGDySVW+VdOi+v0JDNlY+I78Z9xvlsEn7zC4PhSpyoOrcZQnGxvDib8oM90Q/CPS8hZFWl88PXM+9QC2Z6lWSqVMkJ29a2rQ1sVjL+z8OiSne7oZjgWSJaaZNkjFLUJlOpDoumJAIptBfrXknEvM0+31D6P15Kux+oRzPrVGZJMpbGhNEtAKOdX2jjHS/ZzYCg1UNNhCq8bBRBQHyuLEb5w6JUVqo2FafGe1sXGXRRM3Pk9NVXA0LEWjAGDQ3DESgrob7r5kPNEOx9JOTob8zRAKKUmCGw1qXPawbsEpS5cFdQxVmkWANZoul33ihKQ0b8SYvUrz/HrDw50IY30Mx4yGF1dluQ9Njz442c0xpT9R89qT08raTBxI6tOzTxeAkqD+M7dWV692jdy3X9mcZiDLqTh4mDXmkJXvnr1smXdDhbJsR33OcetYsMowZWseRn3jSw2mq0QDRzzOJxxzmkIhHaGnft33cuw=
