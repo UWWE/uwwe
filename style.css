@@ -1039,6 +1039,7 @@ div[data-dimension] {
   height: 150px;
   margin: 0 auto 15px;
   width: 150px;
+  object-fit: cover;
 }
 .single_team h5 {
   color: #555;

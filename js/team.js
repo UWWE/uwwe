@@ -54,17 +54,6 @@ jQuery(function($){
                 }
             },
             {
-                "name": "Chandler Yan",
-                "program": "Computer Science",
-                "description": "<p>我就是我 做最不一样的</p><p>水（cheng）果（zi）</p>",
-                "department": "editorial",
-                "social": {
-                    "facebook": "https://www.facebook.com/profile.php?id=100006857493231",
-                    "wechat": "as574601359",
-                    "envelope": "mailto:yanyucheng007@hotmail.com"
-                }
-            },
-            {
                 "name": "Ivy Ling",
                 "program": "Math",
                 "description": "<p>一直期待张悬出新歌的苏打绿粉</p>",
@@ -198,7 +187,7 @@ jQuery(function($){
             {
                 "name": "Wendy Lin",
                 "program": "Actuarial Science",
-                "description": "<p>笑点诡异的吃货 (￣.￣)</p>",
+                "description": "<p>每天莫名其妙的乐呵</p>",
                 "department": "event",
                 "social": {
                     "envelope": "wandi0118@gmail.com",
@@ -364,6 +353,136 @@ jQuery(function($){
                     "envelope": "ariel.jsy@gmail.com",
                     "wechat": "16479889796",
                     "instagram": "stupidariel"
+                }
+            },
+            {
+                "name": "Alicia Gu",
+                "program": "",
+                "description": "<p>彪悍勇敢，乐观温暖</p>",
+                "department": "event",
+                "social": {
+                    "wechat": "tarotapioca"
+                }
+            },
+            {
+                "name": "Angela Fan",
+                "program": "",
+                "description": "<p>话唠～ 活泼 喜欢吃</p>",
+                "department": "event",
+                "social": {
+                    "wechat": "fansijia0731"
+                }
+            },
+            {
+                "name": "Chandler Yan",
+                "program": "Computer Science",
+                "description": "<p>我就是我，做最不一样的水（cheng）果（zi）</p>",
+                "department": "exec",
+                "social": {
+                    "wechat": "as574601359"
+                }
+            },
+            {
+                "name": "Claudia Ying",
+                "program": "",
+                "description": "<p>只想暴瘦</p><p>只想暴富</p>",
+                "department": "event",
+                "social": {
+                    "wechat": "xin600025",
+                    "instagram": "ccclaudia.y"
+                }
+            },
+            {
+                "name": "Echo Qiu",
+                "program": "",
+                "description": "<p>长期来面临的主要矛盾：美食与减肥</p>",
+                "department": "event",
+                "social": {
+                    "wechat": "13601563031"
+                }
+            },
+            {
+                "name": "Joyce Luo",
+                "program": "",
+                "description": "<p>怀着改变世界的英雄梦，祈求安稳的平凡人生</p>",
+                "department": "pr",
+                "social": {
+                    "wechat": "joyceee96"
+                }
+            },
+            {
+                "name": "Leon Ma",
+                "program": "Computer Engineering",
+                "description": "<p>Work Hard Play Hard</p>",
+                "department": "pr",
+                "social": {
+                    "wechat": "leonma333"
+                }
+            },
+            {
+                "name": "Rachel Ni",
+                "program": "",
+                "description": "<p>实在没有才艺了 给大家翻个白眼吧</p>",
+                "department": "editorial",
+                "social": {
+                    "wechat": "yunakim2014",
+
+                }
+            },
+            {
+                "name": "Timmy Zhu",
+                "program": "",
+                "description": "<p>想当歌手和电竞选手的程序员</p>",
+                "department": "event",
+                "social": {
+                    "wechat": "hualuozuihuanshang",
+                    
+                }
+            },
+            {
+                "name": "Violet",
+                "program": "",
+                "description": "<p>最大的爱好就是吃饭</p><p>爱吃午饭 晚饭 夜宵</p><p>如果早上起得来</p><p>也爱吃早饭</p>",
+                "department": "event",
+                "social": {
+                    "wechat": "934644451",
+                    
+                }
+            },
+            {
+                "name": "Vivi Cao",
+                "program": "",
+                "description": "<p>近期目标：和男票养三只猫，两只狗，一只蜥蜴。已达成：½</p>",
+                "department": "editorial",
+                "social": {
+                    "wechat": "lilyice19980226",
+                }
+            },
+            {
+                "name": "Vivian Bai",
+                "program": "",
+                "description": "<p>声优都是怪物，惹不起惹不起</p>",
+                "department": "pr",
+                "social": {
+                    "wechat": "x_1970-2000",
+                }
+            },
+            {
+                "name": "Yichen Wang",
+                "program": "",
+                "description": "<p>想要一夜暴富。钱啊 快来吧</p>",
+                "department": "editorial",
+                "social": {
+                    "wechat": "bujianbusan778629",
+                }
+            },
+            {
+                "name": "Zoey Yang",
+                "program": "FARM",
+                "description": "<p>谁动了本宝的蛋黄酥？</p>",
+                "department": "event",
+                "social": {
+                    "wechat": "y199701142199",
                 }
             }
 
