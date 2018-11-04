@@ -2,130 +2,6 @@ jQuery(function($){
     var team = {
         "list": [
             {
-                "name": "Marc Lo",
-                "program": "Computer Eng.",
-                "description": "<p>英雄莫問出處，學渣莫問成績，拍視頻棄成績就是我。</p>",
-                "department": "exec tech",
-                "social": {
-                    "youtube": "https://www.youtube.com/channel/UCaWVOzI9SqHA19nnOW7pHHA",
-                    "instagram": "http://instagram.com/marcblast",
-                    "linkedin": "https://ca.linkedin.com/pub/hung-yui-lo/94/327/206/en"
-                }
-            },
-            {
-                "name": "Sophie Shi",
-                "program": "Computer Science",
-                "description": "<p>敌视现实，</p><p>虚构远方。</p>",
-                "department": "exec editorial",
-                "social": {
-                    "instagram": "http://instagram.com/__sooophiie",
-                    "linkedin": "https://ca.linkedin.com/pub/sophie-shi/9a/254/930/en",
-                    "facebook": "https://www.facebook.com/sophie.shi.31"
-                }
-            },
-            {
-                "name": "Richard Li",
-                "program": "Computer Science",
-                "description": "<p>我叫LCD，平时喜欢</p><p>拍拍照，扯扯淡，打打球。</p>",
-                "department": "pr",
-                "social": {
-                    "facebook": "https://www.facebook.com/profile.php?id=100006362884353&fref=ts",
-                    "linkedin": "https://ca.linkedin.com/pub/richard-li/90/b11/179/en"
-                }
-            },
-            {
-                "name": "Susan Cao",
-                "program": "CFM",
-                "description": "<p>摄影是病，得治。祖传PS</p><p>包治百病。(T^T摄影除外)</p>",
-                "department": "exec design",
-                "social": {
-                    "linkedin": "http://ca.linkedin.com/pub/susan-cao/9b/bb0/405/en",
-                    "500px": "https://500px.com/susancao"
-                }
-            },
-            {
-                "name": "Sophie Gao",
-                "program": "Computer Science",
-                "description": "<p>不做蝼蚁，不做神，</p><p>做个默默吃东西的人。</p>",
-                "department": "editorial",
-                "social": {
-                    "instagram": "http://instagram.com/sophiemjj_?ref=badge",
-                    "linkedin": "http://www.linkedin.com/profile/view?id=107544866"
-                }
-            },
-            {
-                "name": "Chandler Yan",
-                "program": "Computer Science",
-                "description": "<p>我就是我 做最不一样的</p><p>水（cheng）果（zi）</p>",
-                "department": "editorial",
-                "social": {
-                    "facebook": "https://www.facebook.com/profile.php?id=100006857493231",
-                    "wechat": "as574601359",
-                    "envelope": "mailto:yanyucheng007@hotmail.com"
-                }
-            },
-            {
-                "name": "Ivy Ling",
-                "program": "Math",
-                "description": "<p>一直期待张悬出新歌的苏打绿粉</p>",
-                "department": "exec",
-                "social": {
-                    "facebook": "https://www.facebook.com/ivy.ling.739?fref=ts",
-                    "instagram": "http://instagram.com/ivyrosykevin?ref=badge",
-                    "wechat": "lzy591156784"
-                }
-            },
-            {
-                "name": "Kathy Zheng",
-                "program": "AFM",
-                "description": "<p>一吃一大碗</p><p>一睡一整天</p>",
-                "department": "pr exec",
-                "social": {
-                    "instagram": "http://instagram.com/kakazhenng?ref=badge",
-                    "facebook": "https://www.facebook.com/kathy.zheng.75",
-                    "wechat": "kathy052727"
-                }
-            },
-            {
-                "name": "Orchid Ma",
-                "program": "Computer Science",
-                "description": "<p>高冷的暖男</p><p>就是我~</p>",
-                "department": "editorial",
-                "social": {
-                    "facebook": "https://www.facebook.com/orchid.ma.97?fref=ts",
-                    "instagram": "http://instagram.com/orchiiidda_aoe?ref=badge"
-                }
-            },
-            {
-                "name": "Emily Jiang",
-                "program": "FARM/CFA",
-                "description": "<p>黄段子写手</p>",
-                "department": "editorial",
-                "social": {
-                    "envelope": "mailto:dongjiang@live.ca",
-                    "wechat": "5196350218"
-                }
-            },
-            {
-                "name": "Fiona Wang",
-                "program": "Civil Eng.",
-                "description": "<p>人丑体胖</p><p>只能学搬砖的女汉子= =</p>",
-                "department": "event",
-                "social": {
-                    "facebook": "https://www.facebook.com/profile.php?id=100006590940723&fref=ts",
-                    "wechat": "wangmingyue18"
-                }
-            },
-            {
-                "name": "Amy Sui",
-                "program": "Computer Eng.",
-                "description": "<p>爱就是在一起，</p><p>吃很多很多顿饭 :p</p>",
-                "department": "editorial",
-                "social": {
-                    "facebook": "https://www.facebook.com/yi.sui.399"
-                }
-            },
-            {
                 "name": "Claire Shi",
                 "program": "Math",
                 "description": "<p>爱音乐爱健身爱做饭</p>",
@@ -146,16 +22,6 @@ jQuery(function($){
                 }
             },
             {
-                "name": "Linda He",
-                "program": "Computer Science",
-                "description": "<p>爱朋友爱音乐</p><p>爱狗狗爱卖萌</p>",
-                "department": "event",
-                "social": {
-                    "facebook": "https://www.facebook.com/yixuan.he.58",
-                    "wechat": "hyx609381403"
-                }
-            },
-            {
                 "name": "Autumn Xu",
                 "program": "Math",
                 "description": "<p>数学系的文科生，</p><p>鹅大爷的好闺蜜。</p>",
@@ -163,16 +29,6 @@ jQuery(function($){
                 "social": {
                     "facebook": "https://www.facebook.com/autumn.xu.52",
                     "wechat": "autumnxjingjing"
-                }
-            },
-            {
-                "name": "Daisy Yu",
-                "program": "Arts",
-                "description": "<p>爱猫，爱狗，爱文艺的大龄单身女青年。</p>",
-                "department": "editorial",
-                "social": {
-                    "envelope": "mailto:daisyh1023@yahoo.com",
-                    "wechat": "1196090716"
                 }
             },
             {
@@ -186,19 +42,9 @@ jQuery(function($){
                 }
             },
             {
-                "name": "Jason Ruan",
-                "program": "FARM",
-                "description": "<p>每个故事里都会有的那个乐于助人且运气不错的小胖</p>",
-                "department": "event",
-                "social": {
-                    "envelope": "jasonrzy2013@gmail.com",
-                    "wechat": "LR_JLC"
-                }
-            },
-            {
                 "name": "Wendy Lin",
                 "program": "Actuarial Science",
-                "description": "<p>笑点诡异的吃货 (￣.￣)</p>",
+                "description": "<p>每天莫名其妙的乐呵</p>",
                 "department": "event",
                 "social": {
                     "envelope": "wandi0118@gmail.com",
@@ -229,33 +75,17 @@ jQuery(function($){
                     "facebook": "https://www.facebook.com/joanna.chow.jc.jc"
                 }
             },
-            // {
-            //     "name": "Tim Zhong",
-            //     "program": "Computer Science",
-            //     "description": "",
-            //     "department": "tech",
-            //     "social": {
-            //     }
-            // },
             {
                 "name": "Spencer Tao",
                 "program": "Economics",
                 "description": "<p>Try to be an Explorer.</p>",
-                "department": "event",
+                "department": "pr",
                 "social": {
                     "envelope": "spencerts@outlook.com",
                     "wechat": "speocean",
                     "instagram": "speocean"
                 }
             },
-            // {
-            //     "name": "Agnes",
-            //     "program": "",
-            //     "description": "",
-            //     "department": "editorial",
-            //     "social": {
-            //     }
-            // },
             {
                 "name": "Sandy Xu",
                 "program": "AFM",
@@ -290,65 +120,10 @@ jQuery(function($){
                 }
             },
             {
-                "name": "Jonathan Wang",
-                "program": "Computer Science",
-                "description": "<p>猜猜我是谁</p>",
-                "department": "editorial",
-                "social": {
-                    "envelope": "jonwzh@gmail.com",
-                    "wechat": "jonathanwzh"
-                }
-            },
-            {
-                "name": "Ryan Han",
-                "program": "Computer Science",
-                "description": "<p>I have a UW, I have a WE Ugh! UWWE.</p>",
-                "department": "editorial",
-                "social": {
-                    "envelope": "ryanhan.ca@outlook.com",
-                    "wechat": "ryan_hannn",
-                    "facebook": "https://www.facebook.com/ryan.xj.han",
-                    "linkedin": "https://www.linkedin.com/in/uwryan",
-                    "desktop": "https://ryanhan.me/"
-                }
-            },
-            // {
-            //     "name": "Winston",
-            //     "program": "event",
-            //     "description": "<p></p>",
-            //     "department": "event",
-            //     "social": {
-            //     }
-            // },
-            // {
-            //     "name": "Myracle",
-            //     "program": "event",
-            //     "description": "<p></p>",
-            //     "department": "event",
-            //     "social": {
-            //     }
-            // },
-            // {
-            //     "name": "Sherry?",
-            //     "program": "event",
-            //     "description": "<p></p>",
-            //     "department": "event",
-            //     "social": {
-            //     }
-            // },
-            // {
-            //     "name": "Kevin Diao",
-            //     "program": "event",
-            //     "description": "<p></p>",
-            //     "department": "event",
-            //     "social": {
-            //     }
-            // },
-            {
                 "name": "Cici Wu",
                 "program": "GBDA",
                 "description": "<p>标准吃货一枚</p>",
-                "department": "editorial",
+                "department": "design",
                 "social": {
                     "envelope": "cicimengxiw847@gmail.com",
                     "wechat": "wumengxi980817",
@@ -359,11 +134,141 @@ jQuery(function($){
                 "name": "Ariel Ji",
                 "program": "Computer Science",
                 "description": "<p>喝最烈的酒</p> <p>做最野的汪</p>",
-                "department": "editorial",
+                "department": "design",
                 "social": {
                     "envelope": "ariel.jsy@gmail.com",
                     "wechat": "16479889796",
                     "instagram": "stupidariel"
+                }
+            },
+            {
+                "name": "Alicia Gu",
+                "program": "",
+                "description": "<p>彪悍勇敢，乐观温暖</p>",
+                "department": "event",
+                "social": {
+                    "wechat": "tarotapioca"
+                }
+            },
+            {
+                "name": "Angela Fan",
+                "program": "",
+                "description": "<p>话唠～ 活泼 喜欢吃</p>",
+                "department": "event",
+                "social": {
+                    "wechat": "fansijia0731"
+                }
+            },
+            {
+                "name": "Chandler Yan",
+                "program": "Computer Science",
+                "description": "<p>我就是我，做最不一样的水（cheng）果（zi）</p>",
+                "department": "exec",
+                "social": {
+                    "wechat": "as574601359"
+                }
+            },
+            {
+                "name": "Claudia Ying",
+                "program": "",
+                "description": "<p>只想暴瘦</p><p>只想暴富</p>",
+                "department": "event",
+                "social": {
+                    "wechat": "xin600025",
+                    "instagram": "ccclaudia.y"
+                }
+            },
+            {
+                "name": "Echo Qiu",
+                "program": "",
+                "description": "<p>长期来面临的主要矛盾：美食与减肥</p>",
+                "department": "event",
+                "social": {
+                    "wechat": "13601563031"
+                }
+            },
+            {
+                "name": "Joyce Luo",
+                "program": "",
+                "description": "<p>怀着改变世界的英雄梦，祈求安稳的平凡人生</p>",
+                "department": "pr",
+                "social": {
+                    "wechat": "joyceee96"
+                }
+            },
+            {
+                "name": "Leon Ma",
+                "program": "Computer Engineering",
+                "description": "<p>Work Hard Play Hard</p>",
+                "department": "pr",
+                "social": {
+                    "wechat": "leonma333"
+                }
+            },
+            {
+                "name": "Rachel Ni",
+                "program": "",
+                "description": "<p>实在没有才艺了 给大家翻个白眼吧</p>",
+                "department": "editorial",
+                "social": {
+                    "wechat": "yunakim2014",
+
+                }
+            },
+            {
+                "name": "Timmy Zhu",
+                "program": "",
+                "description": "<p>想当歌手和电竞选手的程序员</p>",
+                "department": "event",
+                "social": {
+                    "wechat": "hualuozuihuanshang",
+                    
+                }
+            },
+            {
+                "name": "Violet",
+                "program": "",
+                "description": "<p>最大的爱好就是吃饭</p><p>爱吃午饭 晚饭 夜宵</p><p>如果早上起得来</p><p>也爱吃早饭</p>",
+                "department": "event",
+                "social": {
+                    "wechat": "934644451",
+                    
+                }
+            },
+            {
+                "name": "Vivi Cao",
+                "program": "",
+                "description": "<p>近期目标：和男票养三只猫，两只狗，一只蜥蜴。已达成：½</p>",
+                "department": "editorial",
+                "social": {
+                    "wechat": "lilyice19980226",
+                }
+            },
+            {
+                "name": "Vivian Bai",
+                "program": "",
+                "description": "<p>声优都是怪物，惹不起惹不起</p>",
+                "department": "pr",
+                "social": {
+                    "wechat": "x_1970-2000",
+                }
+            },
+            {
+                "name": "Yichen Wang",
+                "program": "",
+                "description": "<p>想要一夜暴富。钱啊 快来吧</p>",
+                "department": "editorial",
+                "social": {
+                    "wechat": "bujianbusan778629",
+                }
+            },
+            {
+                "name": "Zoey Yang",
+                "program": "FARM",
+                "description": "<p>谁动了本宝的蛋黄酥？</p>",
+                "department": "event",
+                "social": {
+                    "wechat": "y199701142199",
                 }
             }
 
