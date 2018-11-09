@@ -32,16 +32,6 @@ jQuery(function($){
                 }
             },
             {
-                "name": "Kyle Zhao",
-                "program": "Computer Science",
-                "description": "<p>GPA是什么？</p><p>能吃么？</p>",
-                "department": "tech",
-                "social": {
-                    "facebook": "https://www.facebook.com/xrav3nz",
-                    "wechat": "hiimkyle"
-                }
-            },
-            {
                 "name": "Wendy Lin",
                 "program": "Actuarial Science",
                 "description": "<p>每天莫名其妙的乐呵</p>",
@@ -61,18 +51,6 @@ jQuery(function($){
                     "envelope": "michael.chi1997@gmail.com",
                     "wechat": "michael1997725",
                     "facebook": "https://www.facebook.com/michael.chi.9"
-                }
-            },
-            {
-                "name": "Joanna Zhou",
-                "program": "Computer Science",
-                "description": "<p>爱笑的女生运气不会差 爱傻笑的女生糊里糊涂地被耍</p>",
-                "department": "tech",
-                "social": {
-                    "envelope": "joanna.chow.jc.jc@gmail.com",
-                    "wechat": "Joanna_chow_",
-                    "instagram": "gaaayee",
-                    "facebook": "https://www.facebook.com/joanna.chow.jc.jc"
                 }
             },
             {
@@ -222,7 +200,7 @@ jQuery(function($){
                 "department": "event",
                 "social": {
                     "wechat": "hualuozuihuanshang",
-                    
+
                 }
             },
             {
@@ -232,7 +210,7 @@ jQuery(function($){
                 "department": "event",
                 "social": {
                     "wechat": "934644451",
-                    
+
                 }
             },
             {
