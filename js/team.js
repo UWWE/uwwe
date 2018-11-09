@@ -167,7 +167,7 @@ jQuery(function($){
             },
             {
                 "name": "Joyce Luo",
-                "program": "",
+                "program": "Biology & Psychology",
                 "description": "<p>怀着改变世界的英雄梦，祈求安稳的平凡人生</p>",
                 "department": "pr",
                 "social": {
