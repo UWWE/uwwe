@@ -189,7 +189,7 @@ jQuery(function($){
             },
             {
                 "name": "Joyce Luo",
-                "program": "",
+                "program": "Biology & Psychology",
                 "description": "<p>怀着改变世界的英雄梦，祈求安稳的平凡人生</p>",
                 "department": "pr",
                 "social": {
@@ -271,7 +271,6 @@ jQuery(function($){
                     "wechat": "y199701142199",
                 }
             }
-
         ],
         "html": "",
         "template": "<div class=\"col-lg-3 col-md-3 col-sm-4\" data-department=\"%s\"> <div class=\"single_team wow fadeInUp\"> <div class=\"team_img\"> <img src=\"img/team/%s.jpg\" onerror=\"this.src='img/team/placeholder-user-photo.png';\"> </div> <h5>%s</h5> <span>%s</span> <div class=\"description\">%s</div> <div class=\"team_social\">%s</div> </div> </div>",
