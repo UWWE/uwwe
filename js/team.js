@@ -81,14 +81,14 @@ jQuery(function($){
                 "description": "<p>虽然一把年纪了，但还是很想成为被选召的孩子啊</p>",
                 "department": "design",
                 "social": {
-                    "event": "zzhangshuyan@gmail.com",
+                    "envelope": "zzhangshuyan@gmail.com",
                     "wechat": "sylviaokita"
                 }
             },
             {
                 "name": "Nicole Sheng",
                 "program": "Actuarial Science",
-                "description": "<p>一個心有文科的理科生</p>",
+                "description": "<p>吃面不吃米的南方人，心有文科的理科生</p>",
                 "department": "editorial",
                 "social": {
                     "envelope": "nicoleshengsal@gmail.com",
@@ -167,7 +167,7 @@ jQuery(function($){
             },
             {
                 "name": "Joyce Luo",
-                "program": "",
+                "program": "Biology & Psychology",
                 "description": "<p>怀着改变世界的英雄梦，祈求安稳的平凡人生</p>",
                 "department": "pr",
                 "social": {
@@ -224,7 +224,7 @@ jQuery(function($){
             },
             {
                 "name": "Vivian Bai",
-                "program": "",
+                "program": "Science and Business",
                 "description": "<p>声优都是怪物，惹不起惹不起</p>",
                 "department": "pr",
                 "social": {
@@ -248,8 +248,25 @@ jQuery(function($){
                 "social": {
                     "wechat": "y199701142199",
                 }
+            },
+            {
+                "name": "Selina Xie",
+                "program": "Math",
+                "description": "<p>想要个暑假</p>",
+                "department": "pr",
+                "social": {
+                    "wechat": "Xie222x",
+                }
+            },
+            {
+                "name": "V",
+                "program": "",
+                "description": "<p>一句话也没有</p>",
+                "department": "pr",
+                "social": {
+                    "wechat": "VANniah",
+                }
             }
-
         ],
         "html": "",
         "template": "<div class=\"col-lg-3 col-md-3 col-sm-4\" data-department=\"%s\"> <div class=\"single_team wow fadeInUp\"> <div class=\"team_img\"> <img src=\"img/team/%s.jpg\" onerror=\"this.src='img/team/placeholder-user-photo.png';\"> </div> <h5>%s</h5> <span>%s</span> <div class=\"description\">%s</div> <div class=\"team_social\">%s</div> </div> </div>",

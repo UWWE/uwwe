@@ -1023,7 +1023,10 @@ div[data-dimension] {
 .single_team {
   border: 2px solid #ccc;
   border-radius: 5px;
-  display: inline;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 450px;
   float: left;
   padding: 25px 15px;
   text-align: center;
