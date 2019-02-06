@@ -294,6 +294,13 @@ jQuery(function($){
                 "social": {
                     "wechat": "Luck-Lucia",
                 }
+            },
+            {
+                "name": "Nina Ren",
+                "program": "精算统计",
+                "description": "<p>每天开心快乐傻笑，真好</p>",
+                "department": "pr",
+                "social":{}
             }
         ],
         "html": "",
